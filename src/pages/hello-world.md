@@ -1,23 +1,30 @@
 ---
-title: Hello World
+title: Introduction and Disclaimer
 date: 2015-05-01T22:12:03.284Z
 
 ---
-This is my first post on my new fake blog! How exciting!
+## Introduction
 
-I'm sure I'll write a lot more interesting things in the future.
+Welcome to the GP Pain Help App, to help GPs manage cancer pain in their patients.
 
-Oh, and here's a great quote from this Wikipedia on
-[salted duck eggs](http://en.wikipedia.org/wiki/Salted_duck_egg).
+## General principles
 
-testing
+Opioids are the only pharmacological class of drug with the ability to control severe pain.
 
-> A salted duck egg is a Chinese preserved food product made by soaking duck
-> eggs in brine, or packing each egg in damp, salted charcoal. In Asian
-> supermarkets, these eggs are sometimes sold covered in a thick layer of salted
-> charcoal paste. The eggs may also be sold with the salted paste removed,
-> wrapped in plastic, and vacuum packed. From the salt curing process, the
-> salted duck eggs have a briny aroma, a gelatin-like egg white and a
-> firm-textured, round yolk that is bright orange-red in color.
+Use oral route first line where possible.
 
-![Chinese Salty Egg](/uploads/salty_egg.jpg)
+Dose regularly with controlled-release (CR) preparations, with as required (prn) immediate-release (IR) doses (1/6 daily dose) to assess analgesic requirements.
+
+Titrate dose against effect and toxicity – consider switching to another class of opioid if toxicity becomes dose-limiting.
+
+## Disclaimer
+
+The information within this app is presented by the Centre for Palliative Care Research and Education (CPCRE) for the purpose of disseminating health information free of charge and for the benefit of the healthcare professional.
+
+While CPCRE has exercised due care in ensuring the accuracy of the material herein, the information provided should be treated as a guide only to appropriate practice, to be followed subject to the clinician’s judgment and the patient’s preference in each individual case.
+
+CPCRE does not accept any liability for any injury, loss or damage incurred by use of or reliance on the information contained herein.
+
+## Acknowledgement
+
+CPCRE acknowledges the assistance of Professor Janet Hardy and Dr Phillip Good in development of this pain aid for GPs.
