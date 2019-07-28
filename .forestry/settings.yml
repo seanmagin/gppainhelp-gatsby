@@ -1,7 +1,7 @@
 ---
 new_page_extension: md
 auto_deploy: true
-admin_path: 
+admin_path: ''
 webhook_url: 
 sections:
 - type: directory
@@ -29,7 +29,7 @@ build:
   publish_command: gatsby build
   preview_output_directory: public
   output_directory: public
-  instant_preview_command: npm run forestry:preview
+  instant_preview_command: yarn develop
   install_dependencies_command: yarn install
   preview_docker_image: node:10
   mount_path: "/srv"
