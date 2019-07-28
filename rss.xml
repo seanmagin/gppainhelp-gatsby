@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby + Forestry Starter Blog]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do. Tweaked to work better with Forestry CMS.]]></description><link>https://gatsbyjs.github.io/gatsby-starter-blog</link><generator>RSS for Node</generator><lastBuildDate>Sun, 28 Jul 2019 11:35:19 GMT</lastBuildDate><item><title><![CDATA[Test Post]]></title><description><![CDATA[This post was edited in Forestry]]></description><link>https://gatsbyjs.github.io/gatsby-starter-blog/test-post/</link><guid isPermaLink="false">https://gatsbyjs.github.io/gatsby-starter-blog/test-post/</guid><pubDate>Wed, 14 Nov 2018 21:49:52 GMT</pubDate><content:encoded>&lt;h1&gt;This post was edited in Forestry&lt;img src=&quot;../../uploads/salty_egg.jpg&quot;&gt;&lt;/h1&gt;</content:encoded></item><item><title><![CDATA[New Beginnings]]></title><description><![CDATA[Far far away, behind the word mountains, far from the countries Vokalia and
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby + Forestry Starter Blog]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do. Tweaked to work better with Forestry CMS.]]></description><link>https://gatsbyjs.github.io/gatsby-starter-blog</link><generator>RSS for Node</generator><lastBuildDate>Sun, 28 Jul 2019 11:48:03 GMT</lastBuildDate><item><title><![CDATA[Test Post]]></title><description><![CDATA[This post was edited in Forestry]]></description><link>https://gatsbyjs.github.io/gatsby-starter-blog/test-post/</link><guid isPermaLink="false">https://gatsbyjs.github.io/gatsby-starter-blog/test-post/</guid><pubDate>Wed, 14 Nov 2018 21:49:52 GMT</pubDate><content:encoded>&lt;h1&gt;This post was edited in Forestry&lt;img src=&quot;../../uploads/salty_egg.jpg&quot;&gt;&lt;/h1&gt;</content:encoded></item><item><title><![CDATA[New Beginnings]]></title><description><![CDATA[Far far away, behind the word mountains, far from the countries Vokalia and
 Consonantia, there live the blind texts. Separated they live in…]]></description><link>https://gatsbyjs.github.io/gatsby-starter-blog/hi-folks/</link><guid isPermaLink="false">https://gatsbyjs.github.io/gatsby-starter-blog/hi-folks/</guid><pubDate>Thu, 28 May 2015 22:40:32 GMT</pubDate><content:encoded>&lt;p&gt;Far far away, behind the word mountains, far from the countries Vokalia and
 Consonantia, there live the blind texts. Separated they live in Bookmarksgrove
 right at the coast of the Semantics, a large language ocean. A small river named
@@ -97,18 +97,16 @@ chicken eggs, though the…]]></description><link>https://gatsbyjs.github.io/gat
 chicken eggs, though the taste and texture will be somewhat different, and the
 egg yolk will be less rich.”?
 (&lt;a href=&quot;http://en.wikipedia.org/wiki/Salted_duck_egg&quot;&gt;Wikipedia Link&lt;/a&gt;)&lt;/p&gt;
-&lt;p&gt;Yeah, I didn’t either.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Hello World]]></title><description><![CDATA[This is my first post on my new fake blog! How exciting! I’m sure I’ll write a lot more interesting things in the future. Oh, and here’s a…]]></description><link>https://gatsbyjs.github.io/gatsby-starter-blog/hello-world/</link><guid isPermaLink="false">https://gatsbyjs.github.io/gatsby-starter-blog/hello-world/</guid><pubDate>Fri, 01 May 2015 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;This is my first post on my new fake blog! How exciting!&lt;/p&gt;
-&lt;p&gt;I’m sure I’ll write a lot more interesting things in the future.&lt;/p&gt;
-&lt;p&gt;Oh, and here’s a great quote from this Wikipedia on
-&lt;a href=&quot;http://en.wikipedia.org/wiki/Salted_duck_egg&quot;&gt;salted duck eggs&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;testing&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;A salted duck egg is a Chinese preserved food product made by soaking duck
-eggs in brine, or packing each egg in damp, salted charcoal. In Asian
-supermarkets, these eggs are sometimes sold covered in a thick layer of salted
-charcoal paste. The eggs may also be sold with the salted paste removed,
-wrapped in plastic, and vacuum packed. From the salt curing process, the
-salted duck eggs have a briny aroma, a gelatin-like egg white and a
-firm-textured, round yolk that is bright orange-red in color.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&quot;../../uploads/salty_egg.jpg&quot; alt=&quot;Chinese Salty Egg&quot;&gt;&lt;/p&gt;</content:encoded></item></channel></rss>
+&lt;p&gt;Yeah, I didn’t either.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Introduction and Disclaimer]]></title><description><![CDATA[Introduction Welcome to the GP Pain Help App, to help GPs manage cancer pain in their patients. General principles Opioids are the only…]]></description><link>https://gatsbyjs.github.io/gatsby-starter-blog/hello-world/</link><guid isPermaLink="false">https://gatsbyjs.github.io/gatsby-starter-blog/hello-world/</guid><pubDate>Fri, 01 May 2015 22:12:03 GMT</pubDate><content:encoded>&lt;h2&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;Welcome to the GP Pain Help App, to help GPs manage cancer pain in their patients.&lt;/p&gt;
+&lt;h2&gt;General principles&lt;/h2&gt;
+&lt;p&gt;Opioids are the only pharmacological class of drug with the ability to control severe pain.&lt;/p&gt;
+&lt;p&gt;Use oral route first line where possible.&lt;/p&gt;
+&lt;p&gt;Dose regularly with controlled-release (CR) preparations, with as required (prn) immediate-release (IR) doses (1/6 daily dose) to assess analgesic requirements.&lt;/p&gt;
+&lt;p&gt;Titrate dose against effect and toxicity – consider switching to another class of opioid if toxicity becomes dose-limiting.&lt;/p&gt;
+&lt;h2&gt;Disclaimer&lt;/h2&gt;
+&lt;p&gt;The information within this app is presented by the Centre for Palliative Care Research and Education (CPCRE) for the purpose of disseminating health information free of charge and for the benefit of the healthcare professional.&lt;/p&gt;
+&lt;p&gt;While CPCRE has exercised due care in ensuring the accuracy of the material herein, the information provided should be treated as a guide only to appropriate practice, to be followed subject to the clinician’s judgment and the patient’s preference in each individual case.&lt;/p&gt;
+&lt;p&gt;CPCRE does not accept any liability for any injury, loss or damage incurred by use of or reliance on the information contained herein.&lt;/p&gt;
+&lt;h2&gt;Acknowledgement&lt;/h2&gt;
+&lt;p&gt;CPCRE acknowledges the assistance of Professor Janet Hardy and Dr Phillip Good in development of this pain aid for GPs.&lt;/p&gt;</content:encoded></item></channel></rss>
