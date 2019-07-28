@@ -1,6 +1,6 @@
 ---
 title: Introduction and Disclaimer
-date: 2015-05-01T22:12:03.284Z
+date: 2015-05-01T22:12:03.284+00:00
 
 ---
 ## Introduction
@@ -11,7 +11,7 @@ Welcome to the GP Pain Help App, to help GPs manage cancer pain in their patient
 
 Opioids are the only pharmacological class of drug with the ability to control severe pain.
 
-Use oral route first line where possible.
+Use oral route first line where possible. test
 
 Dose regularly with controlled-release (CR) preparations, with as required (prn) immediate-release (IR) doses (1/6 daily dose) to assess analgesic requirements.
 
