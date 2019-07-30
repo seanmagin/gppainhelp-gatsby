@@ -1,0 +1,897 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.75 'Merriweather','Georgia',serif;box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.9);font-family:'Merriweather','Georgia',serif;font-weight:400;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}h1{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:Montserrat,sans-serif;font-weight:900;text-rendering:optimizeLegibility;font-size:2.5rem;line-height:1.1;}h2{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.73286rem;line-height:1.1;}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.4427rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;letter-spacing:0.140625em;text-transform:uppercase;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.83255rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.75966rem;line-height:1.1;font-style:italic;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}ul{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;list-style:disc;}ol{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:0.85rem;line-height:1.75rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1rem;line-height:1.75rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}blockquote{margin-left:-1.75rem;margin-right:1.75rem;margin-top:0;padding-bottom:0;padding-left:1.42188rem;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1.20112rem;line-height:1.75rem;color:hsla(0,0%,0%,0.59);font-style:italic;border-left:0.32813rem solid hsla(0,0%,0%,0.9);}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(1.75rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}b{font-weight:700;}strong{font-weight:700;}dt{font-weight:700;}th{font-weight:700;}li{margin-bottom:calc(1.75rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}li > ul{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(1.75rem / 2);}code{font-size:0.85rem;line-height:1.75rem;}kbd{font-size:0.85rem;line-height:1.75rem;}samp{font-size:0.85rem;line-height:1.75rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:1.16667rem;padding-right:1.16667rem;padding-top:0.875rem;padding-bottom:calc(0.875rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}blockquote > :last-child{margin-bottom:0;}blockquote cite{font-size:1rem;line-height:1.75rem;color:hsla(0,0%,0%,0.9);font-weight:400;}blockquote cite:before{content:"— ";}ul,ol{margin-left:0;}@media only screen and (max-width:480px){ul,ol{margin-left:1.75rem;}blockquote{margin-left:-1.3125rem;margin-right:0;padding-left:0.98438rem;}}h1,h2,h3,h4,h5,h6{margin-top:3.5rem;}a{box-shadow:0 1px 0 0 currentColor;color:#007acc;text-decoration:none;}a:hover,a:active{box-shadow:none;}mark,ins{background:#007acc;color:white;padding:0.10938rem 0.21875rem;text-decoration:none;}a.gatsby-resp-image-link{box-shadow:none;}</style><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=008654519ce705ac7bc44303a9014606"/><link rel="preconnect dns-prefetch" href="https://www.google-analytics.com"/><link rel="alternate" type="application/rss+xml" href="/rss.xml"/><link rel="shortcut icon" href="/icons/icon-48x48.png?v=008654519ce705ac7bc44303a9014606"/><link rel="manifest" href="/manifest.webmanifest"/><meta name="theme-color" content="#663399"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=008654519ce705ac7bc44303a9014606"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=008654519ce705ac7bc44303a9014606"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=008654519ce705ac7bc44303a9014606"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=008654519ce705ac7bc44303a9014606"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=008654519ce705ac7bc44303a9014606"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=008654519ce705ac7bc44303a9014606"/><meta name="generator" content="Gatsby 2.13.41"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=008654519ce705ac7bc44303a9014606"/><title data-react-helmet="true">null | GPPainHelp test</title><meta data-react-helmet="true" name="description" content="GP Pain Help [Information Introduction and Disclaimer ](#intro) [Treatment Decision Tree Treatment Decision Tree ](#treatment-intro…"/><style data-href="/styles.88ad139ec93449cb5030.css">@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:100;src:local("Montserrat Thin "),local("Montserrat-Thin"),url(/static/montserrat-latin-100-50d279861fb3cbfed809eae6ed8b9ac9.woff2) format("woff2"),url(/static/montserrat-latin-100-5e334eff013f12fbb8ed72c2a253f119.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:100;src:local("Montserrat Thin italic"),local("Montserrat-Thinitalic"),url(/static/montserrat-latin-100italic-8c0705336558194799a8729840d7ed9d.woff2) format("woff2"),url(/static/montserrat-latin-100italic-03e19243272affe738654a157625ec26.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:200;src:local("Montserrat Extra Light "),local("Montserrat-Extra Light"),url(/static/montserrat-latin-200-4343d3d91a9446226e7a8bbb024111ad.woff2) format("woff2"),url(/static/montserrat-latin-200-f2022ecd65a0703ec3edcb7641709a75.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:200;src:local("Montserrat Extra Light italic"),local("Montserrat-Extra Lightitalic"),url(/static/montserrat-latin-200italic-116c4c4b14ef76b0555da09854512022.woff2) format("woff2"),url(/static/montserrat-latin-200italic-89614a6008fc5c60739012463d0ee7e6.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:300;src:local("Montserrat Light "),local("Montserrat-Light"),url(/static/montserrat-latin-300-d2ad295b60682a6537c358e06ea80c61.woff2) format("woff2"),url(/static/montserrat-latin-300-3a371ee0d175f5c2b15ce1d6b981dc4e.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:300;src:local("Montserrat Light italic"),local("Montserrat-Lightitalic"),url(/static/montserrat-latin-300italic-f6b6bf2431003f8142e800f9df157989.woff2) format("woff2"),url(/static/montserrat-latin-300italic-16521668f5f238098329cdd7d27c391e.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:400;src:local("Montserrat Regular "),local("Montserrat-Regular"),url(/static/montserrat-latin-400-240a84447b78da0920fcb07e378f2c5f.woff2) format("woff2"),url(/static/montserrat-latin-400-b20cc131034316b1c85d0498fb9ed5c5.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:400;src:local("Montserrat Regular italic"),local("Montserrat-Regularitalic"),url(/static/montserrat-latin-400italic-86172bb829de6be08b92512096b6aca6.woff2) format("woff2"),url(/static/montserrat-latin-400italic-9405e78785a55cf0e4ea7669d4616ea9.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:500;src:local("Montserrat Medium "),local("Montserrat-Medium"),url(/static/montserrat-latin-500-fb8d6b71dbe8d9294be43082936f649e.woff2) format("woff2"),url(/static/montserrat-latin-500-50825d47af7ae47e055018eb689c6c99.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:500;src:local("Montserrat Medium italic"),local("Montserrat-Mediumitalic"),url(/static/montserrat-latin-500italic-c0a555a4f8e997385a3eebbd4da0b9ee.woff2) format("woff2"),url(/static/montserrat-latin-500italic-635de59c4be86285b1f70068c95b9816.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:600;src:local("Montserrat SemiBold "),local("Montserrat-SemiBold"),url(/static/montserrat-latin-600-d5615136a08cfee70deb4be1ee1651df.woff2) format("woff2"),url(/static/montserrat-latin-600-f300da4fb4fe00e23915f62b2c643681.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:600;src:local("Montserrat SemiBold italic"),local("Montserrat-SemiBolditalic"),url(/static/montserrat-latin-600italic-10f29d139edacde92df63374c5672568.woff2) format("woff2"),url(/static/montserrat-latin-600italic-2bc37d86a4ba12ce526c4af904a9946e.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:700;src:local("Montserrat Bold "),local("Montserrat-Bold"),url(/static/montserrat-latin-700-7d77e1f03eefc452dab14d7f89080083.woff2) format("woff2"),url(/static/montserrat-latin-700-81826529772e52f0f14a4c73c2f2c7f1.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:700;src:local("Montserrat Bold italic"),local("Montserrat-Bolditalic"),url(/static/montserrat-latin-700italic-1dd2b53f1567a29e0505de9b27c4352c.woff2) format("woff2"),url(/static/montserrat-latin-700italic-c162d257f5e9f9b108a96a604cfb2132.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold "),local("Montserrat-ExtraBold"),url(/static/montserrat-latin-800-d4e7bf86bbd8e5f43ca73fa831218648.woff2) format("woff2"),url(/static/montserrat-latin-800-895aadbff357be35ac8dd107c7975ee7.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold italic"),local("Montserrat-ExtraBolditalic"),url(/static/montserrat-latin-800italic-fc0cbe442f7b3733c91e982e825c4daa.woff2) format("woff2"),url(/static/montserrat-latin-800italic-b3362875067300abedb7a8fb97903258.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:900;src:local("Montserrat Black "),local("Montserrat-Black"),url(/static/montserrat-latin-900-c8bdd772c0d1347720ff7e3fb72719f3.woff2) format("woff2"),url(/static/montserrat-latin-900-1b99ef78e627dd9bbd0ca4b5c0789547.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:900;src:local("Montserrat Black italic"),local("Montserrat-Blackitalic"),url(/static/montserrat-latin-900italic-cb72c1f90f66c124fb897a75bec64c78.woff2) format("woff2"),url(/static/montserrat-latin-900italic-b78bb9f8ecec6c5a924c873f1818095f.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:300;src:local("Merriweather Light "),local("Merriweather-Light"),url(/static/merriweather-latin-300-f015f1e9a46a3b9db4fd64564dacece4.woff2) format("woff2"),url(/static/merriweather-latin-300-92dfe81b725c342d31d962da975c07a6.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:300;src:local("Merriweather Light italic"),local("Merriweather-Lightitalic"),url(/static/merriweather-latin-300italic-7fd86b32accf2df4403d1d4fa3a81502.woff2) format("woff2"),url(/static/merriweather-latin-300italic-878b76f59d5ba58dd1652dc8d2a0f4f9.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:400;src:local("Merriweather Regular "),local("Merriweather-Regular"),url(/static/merriweather-latin-400-12dbf4c00ae43698f278b099e4b0ec9e.woff2) format("woff2"),url(/static/merriweather-latin-400-1fffad22b085a877995812dbf1d9ac08.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:400;src:local("Merriweather Regular italic"),local("Merriweather-Regularitalic"),url(/static/merriweather-latin-400italic-1e0d3e8121d88969bfb153c8f174b758.woff2) format("woff2"),url(/static/merriweather-latin-400italic-de18d4c4e8e808a7248a185f866ff094.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:700;src:local("Merriweather Bold "),local("Merriweather-Bold"),url(/static/merriweather-latin-700-dc8fec81a125fc63856587e6683da73b.woff2) format("woff2"),url(/static/merriweather-latin-700-d7d2ed8e58f303392cc3fc00ba3a9186.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:700;src:local("Merriweather Bold italic"),local("Merriweather-Bolditalic"),url(/static/merriweather-latin-700italic-b7b7e5da4d7be8c12bd5a6c809edc8fc.woff2) format("woff2"),url(/static/merriweather-latin-700italic-6210a5fc1c54ca85a5d82aa85d7a9b5c.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:900;src:local("Merriweather Black "),local("Merriweather-Black"),url(/static/merriweather-latin-900-43f870d543dd89fbeb66d417c0d97276.woff2) format("woff2"),url(/static/merriweather-latin-900-8f3806df74937c7b8b53f24ae1e725d1.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:900;src:local("Merriweather Black italic"),local("Merriweather-Blackitalic"),url(/static/merriweather-latin-900italic-168c1ab28ed0e4e7d654334def288bc1.woff2) format("woff2"),url(/static/merriweather-latin-900italic-ae7778f01871e35ee142ef207b313b34.woff) format("woff")}#FOOTER_1{height:367px;width:1903px;-webkit-perspective-origin:951.5px 183.5px;perspective-origin:951.5px 183.5px;-webkit-transform-origin:951.5px 183.5px;transform-origin:951.5px 183.5px}#DIV_2,#FOOTER_1,#FOOTER_1:after,#FOOTER_1:before{box-sizing:border-box;color:#535353;text-align:left;-webkit-text-decoration:none solid #535353;text-decoration:none solid #535353;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-size-adjust:100%;-webkit-column-rule-color:#535353;-moz-column-rule-color:#535353;column-rule-color:#535353;caret-color:#535353;border:0 #535353;font:normal normal 400 normal 18px/29.9999px archiaregular,arial,sans-serif;outline:0 none #535353}#DIV_2{height:367px;width:1903px;-webkit-perspective-origin:951.5px 183.5px;perspective-origin:951.5px 183.5px;-webkit-transform-origin:951.5px 183.5px;transform-origin:951.5px 183.5px;padding:0 60px}#DIV_2:after,#DIV_2:before,#DIV_3{box-sizing:border-box;color:#535353;text-align:left;-webkit-text-decoration:none solid #535353;text-decoration:none solid #535353;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-size-adjust:100%;-webkit-column-rule-color:#535353;-moz-column-rule-color:#535353;column-rule-color:#535353;caret-color:#535353;border:0 #535353;font:normal normal 400 normal 18px/29.9999px archiaregular,arial,sans-serif;outline:0 none #535353}#DIV_3{display:flex;height:367px;width:1903px;-webkit-perspective-origin:951.5px 183.5px;perspective-origin:951.5px 183.5px;-webkit-transform-origin:951.5px 183.5px;transform-origin:951.5px 183.5px;flex-flow:row wrap;margin:0 -60px}#DIV_3:after,#DIV_3:before{box-sizing:border-box;color:#535353;display:block;text-align:left;-webkit-text-decoration:none solid #535353;text-decoration:none solid #535353;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-size-adjust:100%;-webkit-column-rule-color:#535353;-moz-column-rule-color:#535353;column-rule-color:#535353;caret-color:#535353;border:0 #535353;font:normal normal 400 normal 18px/29.9999px archiaregular,arial,sans-serif;outline:0 none #535353}#DIV_4{bottom:0;height:367px;left:0;max-width:33.3333%;min-height:1px;position:relative;right:0;top:0;width:634.328px;-webkit-perspective-origin:317.156px 183.5px;perspective-origin:317.156px 183.5px;-webkit-transform-origin:317.164px 183.5px;transform-origin:317.164px 183.5px;background:#f7f4f1 none repeat scroll 0 0/auto padding-box border-box;flex:0 0 33.3333%;padding:50px 60px}#DIV_4,#DIV_4:after{box-sizing:border-box;color:#535353;min-width:auto;text-align:left;-webkit-text-decoration:none solid #535353;text-decoration:none solid #535353;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-size-adjust:100%;-webkit-column-rule-color:#535353;-moz-column-rule-color:#535353;column-rule-color:#535353;caret-color:#535353;border:0 #535353;font:normal normal 400 normal 18px/29.9999px archiaregular,arial,sans-serif;outline:0 none #535353}#DIV_4:after{min-height:auto}#DIV_4:before{min-height:auto;min-width:auto}#DIV_4:before,#IMG_5{box-sizing:border-box;color:#535353;text-align:left;-webkit-text-decoration:none solid #535353;text-decoration:none solid #535353;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-size-adjust:100%;-webkit-column-rule-color:#535353;-moz-column-rule-color:#535353;column-rule-color:#535353;caret-color:#535353;border:0 #535353;font:normal normal 400 normal 18px/29.9999px archiaregular,arial,sans-serif;outline:0 none #535353}#IMG_5{height:63.9063px;max-width:100%;vertical-align:middle;width:228.672px;-webkit-perspective-origin:114.328px 31.9531px;perspective-origin:114.328px 31.9531px;-webkit-transform-origin:114.336px 31.9531px;transform-origin:114.336px 31.9531px;margin:0 0 40px}#IMG_5:after,#IMG_5:before{box-sizing:border-box;color:#535353;text-align:left;-webkit-text-decoration:none solid #535353;text-decoration:none solid #535353;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-size-adjust:100%;-webkit-column-rule-color:#535353;-moz-column-rule-color:#535353;column-rule-color:#535353;caret-color:#535353;border:0 #535353;font:normal normal 400 normal 18px/29.9999px archiaregular,arial,sans-serif;outline:0 none #535353}#DIV_6{height:124px;width:514.328px;-webkit-perspective-origin:257.156px 62px;perspective-origin:257.156px 62px;-webkit-transform-origin:257.164px 62px;transform-origin:257.164px 62px}#DIV_6,#DIV_6:after{box-sizing:border-box;color:#535353;text-align:left;-webkit-text-decoration:none solid #535353;text-decoration:none solid #535353;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-size-adjust:100%;word-break:break-word;-webkit-column-rule-color:#535353;-moz-column-rule-color:#535353;column-rule-color:#535353;caret-color:#535353;border:0 #535353;font:normal normal 400 normal 18px/29.9999px archiaregular,arial,sans-serif;outline:0 none #535353}#DIV_6:after{clear:both;content:'""';display:table;height:0;width:0;-webkit-perspective-origin:0 0;perspective-origin:0 0;-webkit-transform-origin:0 0;transform-origin:0 0}#DIV_6:before{clear:both;content:'""';display:table;height:0;width:0;-webkit-perspective-origin:0 0;perspective-origin:0 0;-webkit-transform-origin:0 0;transform-origin:0 0;font:normal normal 400 normal 18px/29.9999px archiaregular,arial,sans-serif}#DIV_6:before,#P_7{box-sizing:border-box;color:#535353;text-align:left;-webkit-text-decoration:none solid #535353;text-decoration:none solid #535353;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-size-adjust:100%;word-break:break-word;-webkit-column-rule-color:#535353;-moz-column-rule-color:#535353;column-rule-color:#535353;caret-color:#535353;border:0 #535353;outline:0 none #535353}#P_7{height:108px;width:514.328px;-webkit-perspective-origin:257.156px 54px;perspective-origin:257.156px 54px;-webkit-transform-origin:257.164px 54px;transform-origin:257.164px 54px;font:normal normal 400 normal 11px/18.3333px archiaregular,arial,sans-serif;margin:0 0 16px}#BR_8,#BR_9,#P_7:after,#P_7:before{box-sizing:border-box;color:#535353;text-align:left;-webkit-text-decoration:none solid #535353;text-decoration:none solid #535353;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-size-adjust:100%;word-break:break-word;-webkit-column-rule-color:#535353;-moz-column-rule-color:#535353;column-rule-color:#535353;caret-color:#535353;border:0 #535353;font:normal normal 400 normal 11px/18.3333px archiaregular,arial,sans-serif;outline:0 none #535353}#BR_8,#BR_9{-webkit-perspective-origin:0 0;perspective-origin:0 0;-webkit-transform-origin:0 0;transform-origin:0 0}#BR_8:after,#BR_8:before,#BR_9:after,#BR_9:before{box-sizing:border-box;color:#535353;text-align:left;-webkit-text-decoration:none solid #535353;text-decoration:none solid #535353;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-size-adjust:100%;word-break:break-word;-webkit-column-rule-color:#535353;-moz-column-rule-color:#535353;column-rule-color:#535353;caret-color:#535353;border:0 #535353;font:normal normal 400 normal 11px/18.3333px archiaregular,arial,sans-serif;outline:0 none #535353}#SMALL_10{-webkit-perspective-origin:0 0;perspective-origin:0 0;-webkit-transform-origin:0 0;transform-origin:0 0}#SMALL_10,#SMALL_10:after,#SMALL_10:before{box-sizing:border-box;color:#535353;text-align:left;-webkit-text-decoration:none solid #535353;text-decoration:none solid #535353;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-size-adjust:100%;word-break:break-word;-webkit-column-rule-color:#535353;-moz-column-rule-color:#535353;column-rule-color:#535353;caret-color:#535353;border:0 #535353;font:normal normal 400 normal 8.8px/18.3333px archiaregular,arial,sans-serif;outline:0 none #535353}#DIV_11{bottom:0;height:367px;left:0;max-width:66.6667%;min-height:1px;position:relative;right:0;top:0;width:1268.66px;-webkit-perspective-origin:634.328px 183.5px;perspective-origin:634.328px 183.5px;-webkit-transform-origin:634.328px 183.5px;transform-origin:634.328px 183.5px;background:#283f3d none repeat scroll 0 0/auto padding-box border-box;flex:0 0 66.6667%;padding:60px 95px}#DIV_11,#DIV_11:after{box-sizing:border-box;color:#fff;min-width:auto;text-align:left;-webkit-text-decoration:none solid #fff;text-decoration:none solid #fff;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-size-adjust:100%;-webkit-column-rule-color:#fff;-moz-column-rule-color:#fff;column-rule-color:#fff;caret-color:#fff;border:0 #fff;font:normal normal 400 normal 18px/29.9999px archiaregular,arial,sans-serif;outline:0 none #fff}#DIV_11:after{min-height:auto}#DIV_11:before{min-height:auto;min-width:auto}#DIV_11:before,#DIV_12{box-sizing:border-box;color:#fff;text-align:left;-webkit-text-decoration:none solid #fff;text-decoration:none solid #fff;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-size-adjust:100%;-webkit-column-rule-color:#fff;-moz-column-rule-color:#fff;column-rule-color:#fff;caret-color:#fff;border:0 #fff;font:normal normal 400 normal 18px/29.9999px archiaregular,arial,sans-serif;outline:0 none #fff}#DIV_12{display:flex;height:247px;width:1108.66px;-webkit-perspective-origin:554.328px 123.5px;perspective-origin:554.328px 123.5px;-webkit-transform-origin:554.328px 123.5px;transform-origin:554.328px 123.5px;flex-flow:row wrap;margin:0 -15px}#DIV_12:after,#DIV_12:before{box-sizing:border-box;color:#fff;display:block;text-align:left;-webkit-text-decoration:none solid #fff;text-decoration:none solid #fff;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-size-adjust:100%;-webkit-column-rule-color:#fff;-moz-column-rule-color:#fff;column-rule-color:#fff;caret-color:#fff;border:0 #fff;font:normal normal 400 normal 18px/29.9999px archiaregular,arial,sans-serif;outline:0 none #fff}#DIV_13{bottom:0;height:247px;left:0;max-width:100%;min-height:1px;position:relative;right:0;top:0;width:1108.66px;-webkit-perspective-origin:554.328px 123.5px;perspective-origin:554.328px 123.5px;-webkit-transform-origin:554.328px 123.5px;transform-origin:554.328px 123.5px;flex:0 0 100%;padding:0 15px}#DIV_13,#DIV_13:after{box-sizing:border-box;color:#fff;min-width:auto;text-align:left;-webkit-text-decoration:none solid #fff;text-decoration:none solid #fff;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-size-adjust:100%;-webkit-column-rule-color:#fff;-moz-column-rule-color:#fff;column-rule-color:#fff;caret-color:#fff;border:0 #fff;font:normal normal 400 normal 18px/29.9999px archiaregular,arial,sans-serif;outline:0 none #fff}#DIV_13:after{min-height:auto}#DIV_13:before{min-height:auto;min-width:auto}#DIV_13:before,#DIV_14{box-sizing:border-box;color:#fff;text-align:left;-webkit-text-decoration:none solid #fff;text-decoration:none solid #fff;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-size-adjust:100%;-webkit-column-rule-color:#fff;-moz-column-rule-color:#fff;column-rule-color:#fff;caret-color:#fff;border:0 #fff;font:normal normal 400 normal 18px/29.9999px archiaregular,arial,sans-serif;outline:0 none #fff}#DIV_14{display:flex;height:207px;width:1108.66px;-webkit-perspective-origin:554.328px 103.5px;perspective-origin:554.328px 103.5px;-webkit-transform-origin:554.328px 103.5px;transform-origin:554.328px 103.5px;flex-flow:row wrap;margin:0 -15px}#DIV_14:after,#DIV_14:before{box-sizing:border-box;color:#fff;display:block;text-align:left;-webkit-text-decoration:none solid #fff;text-decoration:none solid #fff;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-size-adjust:100%;-webkit-column-rule-color:#fff;-moz-column-rule-color:#fff;column-rule-color:#fff;caret-color:#fff;border:0 #fff;font:normal normal 400 normal 18px/29.9999px archiaregular,arial,sans-serif;outline:0 none #fff}#DIV_15,#DIV_18{bottom:0;height:207px;left:0;max-width:50%;min-height:1px;position:relative;right:0;top:0;width:554.328px;-webkit-perspective-origin:277.156px 103.5px;perspective-origin:277.156px 103.5px;-webkit-transform-origin:277.164px 103.5px;transform-origin:277.164px 103.5px;flex:0 0 50%;padding:0 15px}#DIV_15,#DIV_15:after,#DIV_18,#DIV_18:after{box-sizing:border-box;color:#fff;min-width:auto;text-align:left;-webkit-text-decoration:none solid #fff;text-decoration:none solid #fff;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-size-adjust:100%;-webkit-column-rule-color:#fff;-moz-column-rule-color:#fff;column-rule-color:#fff;caret-color:#fff;border:0 #fff;font:normal normal 400 normal 18px/29.9999px archiaregular,arial,sans-serif;outline:0 none #fff}#DIV_15:after,#DIV_18:after{min-height:auto}#DIV_15:before,#DIV_18:before{min-height:auto;min-width:auto}#DIV_15:before,#DIV_16,#DIV_18:before{box-sizing:border-box;color:#fff;text-align:left;-webkit-text-decoration:none solid #fff;text-decoration:none solid #fff;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-size-adjust:100%;-webkit-column-rule-color:#fff;-moz-column-rule-color:#fff;column-rule-color:#fff;caret-color:#fff;border:0 #fff;font:normal normal 400 normal 18px/29.9999px archiaregular,arial,sans-serif;outline:0 none #fff}#DIV_16{height:141px;width:524.328px;word-break:break-word;-webkit-perspective-origin:262.156px 70.5px;perspective-origin:262.156px 70.5px;-webkit-transform-origin:262.164px 70.5px;transform-origin:262.164px 70.5px}#DIV_16:after,#DIV_16:before{box-sizing:border-box;clear:both;color:#fff;content:'""';display:table;height:0;text-align:left;-webkit-text-decoration:none solid #fff;text-decoration:none solid #fff;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-size-adjust:100%;width:0;word-break:break-word;-webkit-column-rule-color:#fff;-moz-column-rule-color:#fff;column-rule-color:#fff;-webkit-perspective-origin:0 0;perspective-origin:0 0;-webkit-transform-origin:0 0;transform-origin:0 0;caret-color:#fff;border:0 #fff;font:normal normal 400 normal 18px/29.9999px archiaregular,arial,sans-serif;outline:0 none #fff}#H4_17{height:117px;width:524.328px;-webkit-perspective-origin:262.156px 58.5px;perspective-origin:262.156px 58.5px;-webkit-transform-origin:262.164px 58.5px;transform-origin:262.164px 58.5px;margin:0 0 24px;padding:0 50px 0 0}#H4_17,#H4_17:after,#H4_17:before{box-sizing:border-box;color:#fff;text-align:left;-webkit-text-decoration:none solid #fff;text-decoration:none solid #fff;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-size-adjust:100%;word-break:break-word;-webkit-column-rule-color:#fff;-moz-column-rule-color:#fff;column-rule-color:#fff;caret-color:#fff;border:0 #fff;font:normal normal 400 normal 30px/39px archiabold,arial,sans-serif;outline:0 none #fff}#DIV_19{display:flex;height:29px;width:524.328px;align-items:center;-webkit-perspective-origin:262.156px 14.5px;perspective-origin:262.156px 14.5px;-webkit-transform-origin:262.164px 14.5px;transform-origin:262.164px 14.5px}#DIV_19,#DIV_19:after{box-sizing:border-box;color:#fff;text-align:left;-webkit-text-decoration:none solid #fff;text-decoration:none solid #fff;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-size-adjust:100%;-webkit-column-rule-color:#fff;-moz-column-rule-color:#fff;column-rule-color:#fff;caret-color:#fff;border:0 #fff;font:normal normal 400 normal 18px/29.9999px archiaregular,arial,sans-serif;outline:0 none #fff}#DIV_19:after{display:block}#DIV_19:before{display:block}#DIV_19:before,#UL_20{box-sizing:border-box;color:#fff;text-align:left;-webkit-text-decoration:none solid #fff;text-decoration:none solid #fff;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-size-adjust:100%;-webkit-column-rule-color:#fff;-moz-column-rule-color:#fff;column-rule-color:#fff;caret-color:#fff;border:0 #fff;font:normal normal 400 normal 18px/29.9999px archiaregular,arial,sans-serif;outline:0 none #fff}#UL_20{display:flex;height:29px;min-height:auto;min-width:auto;width:387.734px;-webkit-perspective-origin:193.859px 14.5px;perspective-origin:193.859px 14.5px;-webkit-transform-origin:193.867px 14.5px;transform-origin:193.867px 14.5px;margin:0 0 0 -21px;padding:0}#UL_20:after,#UL_20:before{box-sizing:border-box;color:#fff;display:block;min-height:auto;min-width:auto;text-align:left;-webkit-text-decoration:none solid #fff;text-decoration:none solid #fff;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-size-adjust:100%;-webkit-column-rule-color:#fff;-moz-column-rule-color:#fff;column-rule-color:#fff;caret-color:#fff;border:0 #fff;font:normal normal 400 normal 18px/29.9999px archiaregular,arial,sans-serif;outline:0 none #fff}#LI_21{height:29px;width:132.953px;-webkit-perspective-origin:66.4688px 14.5px;perspective-origin:66.4688px 14.5px;-webkit-transform-origin:66.4766px 14.5px;transform-origin:66.4766px 14.5px;padding:0 21px}#LI_21,#LI_21:after,#LI_21:before{box-sizing:border-box;color:#fff;min-height:auto;min-width:auto;-webkit-text-decoration:none solid #fff;text-decoration:none solid #fff;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-size-adjust:100%;-webkit-column-rule-color:#fff;-moz-column-rule-color:#fff;column-rule-color:#fff;caret-color:#fff;border:0 #fff;font:normal normal 400 normal 18px/29.9999px archiaregular,arial,sans-serif;list-style:none outside none;outline:0 none #fff}#A_22{bottom:0;display:inline-block;height:29px;left:0;position:relative;right:0;top:0;width:90.9531px;-webkit-perspective-origin:45.4688px 14.5px;perspective-origin:45.4688px 14.5px;-webkit-transform-origin:45.4766px 14.5px;transform-origin:45.4766px 14.5px}#A_22,#A_22:after,#A_22:before{box-sizing:border-box;color:#fff;text-align:left;-webkit-text-decoration:none solid #fff;text-decoration:none solid #fff;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-size-adjust:100%;-webkit-column-rule-color:#fff;-moz-column-rule-color:#fff;column-rule-color:#fff;caret-color:#fff;border:0 #fff;font:normal normal 400 normal 16px/29.9999px archiabold,arial,sans-serif;list-style:none outside none;outline:0 none #fff}#A_22:before{bottom:0;content:'""';display:block;height:2px;left:0;position:absolute;right:0;top:27px;width:90.9531px;-webkit-perspective-origin:45.4688px 1px;perspective-origin:45.4688px 1px;-webkit-transform-origin:45.4766px 1px;transform-origin:45.4766px 1px;background:#638425 none repeat scroll 0 0/auto padding-box border-box;-webkit-transition:all .175s linear 0s;transition:all .175s linear 0s}#LI_23{height:29px;width:135.75px;-webkit-perspective-origin:67.875px 14.5px;perspective-origin:67.875px 14.5px;-webkit-transform-origin:67.875px 14.5px;transform-origin:67.875px 14.5px;padding:0 21px}#LI_23,#LI_23:after,#LI_23:before{box-sizing:border-box;color:#fff;min-height:auto;min-width:auto;-webkit-text-decoration:none solid #fff;text-decoration:none solid #fff;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-size-adjust:100%;-webkit-column-rule-color:#fff;-moz-column-rule-color:#fff;column-rule-color:#fff;caret-color:#fff;border:0 #fff;font:normal normal 400 normal 18px/29.9999px archiaregular,arial,sans-serif;list-style:none outside none;outline:0 none #fff}#A_24{bottom:0;display:inline-block;height:29px;left:0;position:relative;right:0;top:0;width:93.75px;-webkit-perspective-origin:46.875px 14.5px;perspective-origin:46.875px 14.5px;-webkit-transform-origin:46.875px 14.5px;transform-origin:46.875px 14.5px}#A_24,#A_24:after,#A_24:before{box-sizing:border-box;color:#fff;text-align:left;-webkit-text-decoration:none solid #fff;text-decoration:none solid #fff;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-size-adjust:100%;-webkit-column-rule-color:#fff;-moz-column-rule-color:#fff;column-rule-color:#fff;caret-color:#fff;border:0 #fff;font:normal normal 400 normal 16px/29.9999px archiabold,arial,sans-serif;list-style:none outside none;outline:0 none #fff}#A_24:before{bottom:0;content:'""';display:block;height:2px;left:0;position:absolute;right:0;top:27px;width:93.75px;-webkit-perspective-origin:46.875px 1px;perspective-origin:46.875px 1px;-webkit-transform-origin:46.875px 1px;transform-origin:46.875px 1px;background:#638425 none repeat scroll 0 0/auto padding-box border-box;-webkit-transition:all .175s linear 0s;transition:all .175s linear 0s}#LI_25{height:29px;width:119.031px;-webkit-perspective-origin:59.5156px 14.5px;perspective-origin:59.5156px 14.5px;-webkit-transform-origin:59.5156px 14.5px;transform-origin:59.5156px 14.5px;padding:0 21px}#LI_25,#LI_25:after,#LI_25:before{box-sizing:border-box;color:#fff;min-height:auto;min-width:auto;-webkit-text-decoration:none solid #fff;text-decoration:none solid #fff;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-size-adjust:100%;-webkit-column-rule-color:#fff;-moz-column-rule-color:#fff;column-rule-color:#fff;caret-color:#fff;border:0 #fff;font:normal normal 400 normal 18px/29.9999px archiaregular,arial,sans-serif;list-style:none outside none;outline:0 none #fff}#A_26{bottom:0;display:inline-block;height:29px;left:0;position:relative;right:0;top:0;width:77.0313px;-webkit-perspective-origin:38.5156px 14.5px;perspective-origin:38.5156px 14.5px;-webkit-transform-origin:38.5156px 14.5px;transform-origin:38.5156px 14.5px}#A_26,#A_26:after,#A_26:before{box-sizing:border-box;color:#fff;text-align:left;-webkit-text-decoration:none solid #fff;text-decoration:none solid #fff;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-size-adjust:100%;-webkit-column-rule-color:#fff;-moz-column-rule-color:#fff;column-rule-color:#fff;caret-color:#fff;border:0 #fff;font:normal normal 400 normal 16px/29.9999px archiabold,arial,sans-serif;list-style:none outside none;outline:0 none #fff}#A_26:before{bottom:0;content:'""';display:block;height:2px;left:0;position:absolute;right:0;top:27px;width:77.0313px;-webkit-perspective-origin:38.5156px 1px;perspective-origin:38.5156px 1px;-webkit-transform-origin:38.5156px 1px;transform-origin:38.5156px 1px;background:#638425 none repeat scroll 0 0/auto padding-box border-box;-webkit-transition:all .175s linear 0s;transition:all .175s linear 0s}#DIV_27{box-sizing:border-box;color:#fff;display:flex;height:178px;text-align:left;-webkit-text-decoration:none solid #fff;text-decoration:none solid #fff;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-size-adjust:100%;width:554.328px;-webkit-column-rule-color:#fff;-moz-column-rule-color:#fff;column-rule-color:#fff;-webkit-perspective-origin:277.156px 89px;perspective-origin:277.156px 89px;-webkit-transform-origin:277.164px 89px;transform-origin:277.164px 89px;caret-color:#fff;border:0 #fff;flex-flow:row wrap;font:normal normal 400 normal 18px/29.9999px archiaregular,arial,sans-serif;margin:0 -15px;outline:0 none #fff}#DIV_27:after,#DIV_27:before{box-sizing:border-box;color:#fff;display:block;text-align:left;-webkit-text-decoration:none solid #fff;text-decoration:none solid #fff;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-size-adjust:100%;-webkit-column-rule-color:#fff;-moz-column-rule-color:#fff;column-rule-color:#fff;caret-color:#fff;border:0 #fff;font:normal normal 400 normal 18px/29.9999px archiaregular,arial,sans-serif;outline:0 none #fff}#DIV_28,#DIV_35{bottom:0;height:178px;left:0;max-width:50%;min-height:1px;position:relative;right:0;top:0;width:277.156px;-webkit-perspective-origin:138.578px 89px;perspective-origin:138.578px 89px;-webkit-transform-origin:138.578px 89px;transform-origin:138.578px 89px;flex:0 0 50%;padding:35px 15px}#DIV_28,#DIV_28:after,#DIV_35,#DIV_35:after{box-sizing:border-box;color:#fff;min-width:auto;text-align:left;-webkit-text-decoration:none solid #fff;text-decoration:none solid #fff;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-size-adjust:100%;-webkit-column-rule-color:#fff;-moz-column-rule-color:#fff;column-rule-color:#fff;caret-color:#fff;border:0 #fff;font:normal normal 400 normal 14px/23.3332px archiaregular,arial,sans-serif;outline:0 none #fff}#DIV_28:after,#DIV_35:after{min-height:auto}#DIV_28:before,#DIV_35:before{min-height:auto;min-width:auto}#DIV_28:before,#DIV_29,#DIV_35:before{box-sizing:border-box;color:#fff;text-align:left;-webkit-text-decoration:none solid #fff;text-decoration:none solid #fff;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-size-adjust:100%;-webkit-column-rule-color:#fff;-moz-column-rule-color:#fff;column-rule-color:#fff;caret-color:#fff;border:0 #fff;font:normal normal 400 normal 14px/23.3332px archiaregular,arial,sans-serif;outline:0 none #fff}#DIV_29{height:108px;width:247.156px;word-break:break-word;-webkit-perspective-origin:123.578px 54px;perspective-origin:123.578px 54px;-webkit-transform-origin:123.578px 54px;transform-origin:123.578px 54px}#DIV_29:after,#DIV_29:before{clear:both;content:'""';display:table;height:0;width:0;-webkit-perspective-origin:0 0;perspective-origin:0 0;-webkit-transform-origin:0 0;transform-origin:0 0}#DIV_29:after,#DIV_29:before,#P_30{box-sizing:border-box;color:#fff;text-align:left;-webkit-text-decoration:none solid #fff;text-decoration:none solid #fff;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-size-adjust:100%;word-break:break-word;-webkit-column-rule-color:#fff;-moz-column-rule-color:#fff;column-rule-color:#fff;caret-color:#fff;border:0 #fff;font:normal normal 400 normal 14px/23.3332px archiaregular,arial,sans-serif;outline:0 none #fff}#P_30{height:92px;width:247.156px;-webkit-perspective-origin:123.578px 46px;perspective-origin:123.578px 46px;-webkit-transform-origin:123.578px 46px;transform-origin:123.578px 46px;margin:0 0 16px}#BR_32,#BR_34,#BR_40,#P_30:after,#P_30:before,#SPAN_31,#SPAN_38{box-sizing:border-box;color:#fff;text-align:left;-webkit-text-decoration:none solid #fff;text-decoration:none solid #fff;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-size-adjust:100%;word-break:break-word;-webkit-column-rule-color:#fff;-moz-column-rule-color:#fff;column-rule-color:#fff;caret-color:#fff;border:0 #fff;font:normal normal 400 normal 14px/23.3332px archiaregular,arial,sans-serif;outline:0 none #fff}#BR_32,#BR_34,#BR_40,#SPAN_31,#SPAN_38{-webkit-perspective-origin:0 0;perspective-origin:0 0;-webkit-transform-origin:0 0;transform-origin:0 0}#BR_32:after,#BR_32:before,#BR_33,#BR_34:after,#BR_34:before,#BR_39,#BR_40:after,#BR_40:before,#SPAN_31:after,#SPAN_31:before,#SPAN_38:after,#SPAN_38:before{box-sizing:border-box;color:#fff;text-align:left;-webkit-text-decoration:none solid #fff;text-decoration:none solid #fff;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-size-adjust:100%;word-break:break-word;-webkit-column-rule-color:#fff;-moz-column-rule-color:#fff;column-rule-color:#fff;caret-color:#fff;border:0 #fff;font:normal normal 400 normal 14px/23.3332px archiaregular,arial,sans-serif;outline:0 none #fff}#BR_33,#BR_39{-webkit-perspective-origin:0 0;perspective-origin:0 0;-webkit-transform-origin:0 0;transform-origin:0 0}#BR_33:after,#BR_33:before,#BR_39:after,#BR_39:before,#DIV_36{box-sizing:border-box;color:#fff;text-align:left;-webkit-text-decoration:none solid #fff;text-decoration:none solid #fff;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-size-adjust:100%;word-break:break-word;-webkit-column-rule-color:#fff;-moz-column-rule-color:#fff;column-rule-color:#fff;caret-color:#fff;border:0 #fff;font:normal normal 400 normal 14px/23.3332px archiaregular,arial,sans-serif;outline:0 none #fff}#DIV_36{height:85px;width:247.156px;-webkit-perspective-origin:123.578px 42.5px;perspective-origin:123.578px 42.5px;-webkit-transform-origin:123.578px 42.5px;transform-origin:123.578px 42.5px}#DIV_36:after,#DIV_36:before{clear:both;content:'""';display:table;height:0;width:0;-webkit-perspective-origin:0 0;perspective-origin:0 0;-webkit-transform-origin:0 0;transform-origin:0 0}#DIV_36:after,#DIV_36:before,#P_37{box-sizing:border-box;color:#fff;text-align:left;-webkit-text-decoration:none solid #fff;text-decoration:none solid #fff;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-size-adjust:100%;word-break:break-word;-webkit-column-rule-color:#fff;-moz-column-rule-color:#fff;column-rule-color:#fff;caret-color:#fff;border:0 #fff;font:normal normal 400 normal 14px/23.3332px archiaregular,arial,sans-serif;outline:0 none #fff}#P_37{height:69px;width:247.156px;-webkit-perspective-origin:123.578px 34.5px;perspective-origin:123.578px 34.5px;-webkit-transform-origin:123.578px 34.5px;transform-origin:123.578px 34.5px;margin:0 0 16px}#P_37:after,#P_37:before{box-sizing:border-box;color:#fff;text-align:left;-webkit-text-decoration:none solid #fff;text-decoration:none solid #fff;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-size-adjust:100%;word-break:break-word;-webkit-column-rule-color:#fff;-moz-column-rule-color:#fff;column-rule-color:#fff;caret-color:#fff;border:0 #fff;font:normal normal 400 normal 14px/23.3332px archiaregular,arial,sans-serif;outline:0 none #fff}#DIV_41{display:flex;height:40px;width:1108.66px;-webkit-perspective-origin:554.328px 20px;perspective-origin:554.328px 20px;-webkit-transform-origin:554.328px 20px;transform-origin:554.328px 20px;flex-flow:row wrap;margin:0 -15px}#DIV_41,#DIV_41:after{box-sizing:border-box;color:#fff;text-align:left;-webkit-text-decoration:none solid #fff;text-decoration:none solid #fff;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-size-adjust:100%;-webkit-column-rule-color:#fff;-moz-column-rule-color:#fff;column-rule-color:#fff;caret-color:#fff;border:0 #fff;font:normal normal 400 normal 18px/29.9999px archiaregular,arial,sans-serif;outline:0 none #fff}#DIV_41:after{display:block}#DIV_41:before{display:block}#DIV_41:before,#DIV_42,#DIV_52{box-sizing:border-box;color:#fff;text-align:left;-webkit-text-decoration:none solid #fff;text-decoration:none solid #fff;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-size-adjust:100%;-webkit-column-rule-color:#fff;-moz-column-rule-color:#fff;column-rule-color:#fff;caret-color:#fff;border:0 #fff;font:normal normal 400 normal 18px/29.9999px archiaregular,arial,sans-serif;outline:0 none #fff}#DIV_42,#DIV_52{bottom:0;height:40px;left:0;max-width:50%;min-height:1px;min-width:auto;position:relative;right:0;top:0;width:554.328px;-webkit-perspective-origin:277.156px 20px;perspective-origin:277.156px 20px;-webkit-transform-origin:277.164px 20px;transform-origin:277.164px 20px;flex:0 0 50%;padding:0 15px}#DIV_42:after,#DIV_42:before,#DIV_52:after,#DIV_52:before{box-sizing:border-box;color:#fff;min-height:auto;min-width:auto;text-align:left;-webkit-text-decoration:none solid #fff;text-decoration:none solid #fff;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-size-adjust:100%;-webkit-column-rule-color:#fff;-moz-column-rule-color:#fff;column-rule-color:#fff;caret-color:#fff;border:0 #fff;font:normal normal 400 normal 18px/29.9999px archiaregular,arial,sans-serif;outline:0 none #fff}#DIV_43{height:40px;width:524.328px;-webkit-perspective-origin:262.156px 20px;perspective-origin:262.156px 20px;-webkit-transform-origin:262.164px 20px;transform-origin:262.164px 20px}#DIV_43,#DIV_43:after{box-sizing:border-box;color:#fff;text-align:left;-webkit-text-decoration:none solid #fff;text-decoration:none solid #fff;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-size-adjust:100%;word-break:break-word;-webkit-column-rule-color:#fff;-moz-column-rule-color:#fff;column-rule-color:#fff;caret-color:#fff;border:0 #fff;font:normal normal 400 normal 18px/29.9999px archiaregular,arial,sans-serif;outline:0 none #fff}#DIV_43:after{clear:both;content:'""';display:table;height:0;width:0;-webkit-perspective-origin:0 0;perspective-origin:0 0;-webkit-transform-origin:0 0;transform-origin:0 0}#DIV_43:before{clear:both;content:'""';display:table;height:0;width:0;-webkit-perspective-origin:0 0;perspective-origin:0 0;-webkit-transform-origin:0 0;transform-origin:0 0}#DIV_43:before,#DIV_44{box-sizing:border-box;color:#fff;text-align:left;-webkit-text-decoration:none solid #fff;text-decoration:none solid #fff;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-size-adjust:100%;word-break:break-word;-webkit-column-rule-color:#fff;-moz-column-rule-color:#fff;column-rule-color:#fff;caret-color:#fff;border:0 #fff;font:normal normal 400 normal 18px/29.9999px archiaregular,arial,sans-serif;outline:0 none #fff}#DIV_44{display:flex;height:40px;width:524.328px;align-items:center;-webkit-perspective-origin:262.156px 20px;perspective-origin:262.156px 20px;-webkit-transform-origin:262.164px 20px;transform-origin:262.164px 20px}#DIV_44:after,#DIV_44:before{box-sizing:border-box;color:#fff;display:block;text-align:left;-webkit-text-decoration:none solid #fff;text-decoration:none solid #fff;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-size-adjust:100%;word-break:break-word;-webkit-column-rule-color:#fff;-moz-column-rule-color:#fff;column-rule-color:#fff;caret-color:#fff;border:0 #fff;font:normal normal 400 normal 18px/29.9999px archiaregular,arial,sans-serif;outline:0 none #fff}#UL_45{display:flex;height:40px;width:381.969px;-webkit-perspective-origin:190.984px 20px;perspective-origin:190.984px 20px;-webkit-transform-origin:190.984px 20px;transform-origin:190.984px 20px;margin:0;padding:0}#UL_45,#UL_45:after{box-sizing:border-box;color:#fff;min-height:auto;min-width:auto;text-align:left;-webkit-text-decoration:none solid #fff;text-decoration:none solid #fff;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-size-adjust:100%;word-break:break-word;-webkit-column-rule-color:#fff;-moz-column-rule-color:#fff;column-rule-color:#fff;caret-color:#fff;border:0 #fff;font:normal normal 400 normal 18px/29.9999px archiaregular,arial,sans-serif;outline:0 none #fff}#UL_45:after{display:block}#UL_45:before{display:block;text-align:left}#LI_46,#UL_45:before{box-sizing:border-box;color:#fff;min-height:auto;min-width:auto;-webkit-text-decoration:none solid #fff;text-decoration:none solid #fff;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-size-adjust:100%;word-break:break-word;-webkit-column-rule-color:#fff;-moz-column-rule-color:#fff;column-rule-color:#fff;caret-color:#fff;border:0 #fff;font:normal normal 400 normal 18px/29.9999px archiaregular,arial,sans-serif;outline:0 none #fff}#LI_46{height:30px;width:130.031px;-webkit-perspective-origin:65.0156px 15px;perspective-origin:65.0156px 15px;-webkit-transform-origin:65.0156px 15px;transform-origin:65.0156px 15px;list-style:none outside none;margin:0 0 10px;padding:0 50px 0 0}#LI_46:after,#LI_46:before{box-sizing:border-box;color:#fff;min-height:auto;min-width:auto;-webkit-text-decoration:none solid #fff;text-decoration:none solid #fff;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-size-adjust:100%;word-break:break-word;-webkit-column-rule-color:#fff;-moz-column-rule-color:#fff;column-rule-color:#fff;caret-color:#fff;border:0 #fff;font:normal normal 400 normal 18px/29.9999px archiaregular,arial,sans-serif;list-style:none outside none;outline:0 none #fff}#A_47,#A_49,#A_51{bottom:0;left:0;position:relative;right:0;top:0;-webkit-perspective-origin:0 0;perspective-origin:0 0;-webkit-transform-origin:0 0;transform-origin:0 0;padding:0 0 3px}#A_47,#A_47:after,#A_47:before,#A_49,#A_49:after,#A_49:before,#A_51,#A_51:after,#A_51:before{box-sizing:border-box;color:#d9e2c7;text-align:left;-webkit-text-decoration:none solid #d9e2c7;text-decoration:none solid #d9e2c7;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-size-adjust:100%;word-break:break-word;-webkit-column-rule-color:#d9e2c7;-moz-column-rule-color:#d9e2c7;column-rule-color:#d9e2c7;caret-color:#d9e2c7;border:0 #d9e2c7;font:normal normal 400 normal 14px/29.9999px archiaregular,arial,sans-serif;list-style:none outside none;outline:0 none #d9e2c7}#A_47:before,#A_49:before,#A_51:before{bottom:0;content:'""';display:none;height:2px;left:0;position:absolute;right:0;background:#638425 none repeat scroll 0 0/auto padding-box border-box}#LI_48{height:30px;width:133.219px;-webkit-perspective-origin:66.6094px 15px;perspective-origin:66.6094px 15px;-webkit-transform-origin:66.6094px 15px;transform-origin:66.6094px 15px;margin:0 0 10px;padding:0 50px 0 0}#LI_48,#LI_48:after,#LI_48:before,#LI_50{box-sizing:border-box;color:#fff;min-height:auto;min-width:auto;-webkit-text-decoration:none solid #fff;text-decoration:none solid #fff;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-size-adjust:100%;word-break:break-word;-webkit-column-rule-color:#fff;-moz-column-rule-color:#fff;column-rule-color:#fff;caret-color:#fff;border:0 #fff;font:normal normal 400 normal 18px/29.9999px archiaregular,arial,sans-serif;list-style:none outside none;outline:0 none #fff}#LI_50{height:30px;width:118.719px;-webkit-perspective-origin:59.3594px 15px;perspective-origin:59.3594px 15px;-webkit-transform-origin:59.3594px 15px;transform-origin:59.3594px 15px;margin:0 0 10px;padding:0 50px 0 0}#LI_50:after,#LI_50:before{box-sizing:border-box;color:#fff;min-height:auto;min-width:auto;-webkit-text-decoration:none solid #fff;text-decoration:none solid #fff;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-size-adjust:100%;word-break:break-word;-webkit-column-rule-color:#fff;-moz-column-rule-color:#fff;column-rule-color:#fff;caret-color:#fff;border:0 #fff;font:normal normal 400 normal 18px/29.9999px archiaregular,arial,sans-serif;list-style:none outside none;outline:0 none #fff}#DIV_53{display:flex;height:38px;width:554.328px;-webkit-perspective-origin:277.156px 19px;perspective-origin:277.156px 19px;-webkit-transform-origin:277.164px 19px;transform-origin:277.164px 19px;flex-flow:row wrap;margin:0 -15px}#DIV_53,#DIV_53:after{box-sizing:border-box;color:#fff;text-align:left;-webkit-text-decoration:none solid #fff;text-decoration:none solid #fff;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-size-adjust:100%;-webkit-column-rule-color:#fff;-moz-column-rule-color:#fff;column-rule-color:#fff;caret-color:#fff;border:0 #fff;font:normal normal 400 normal 18px/29.9999px archiaregular,arial,sans-serif;outline:0 none #fff}#DIV_53:after{display:block}#DIV_53:before{display:block}#DIV_53:before,#DIV_54,#DIV_60{box-sizing:border-box;color:#fff;text-align:left;-webkit-text-decoration:none solid #fff;text-decoration:none solid #fff;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-size-adjust:100%;-webkit-column-rule-color:#fff;-moz-column-rule-color:#fff;column-rule-color:#fff;caret-color:#fff;border:0 #fff;font:normal normal 400 normal 18px/29.9999px archiaregular,arial,sans-serif;outline:0 none #fff}#DIV_54,#DIV_60{bottom:0;height:38px;left:0;max-width:50%;min-height:1px;min-width:auto;position:relative;right:0;top:0;width:277.156px;-webkit-perspective-origin:138.578px 19px;perspective-origin:138.578px 19px;-webkit-transform-origin:138.578px 19px;transform-origin:138.578px 19px;flex:0 0 50%;padding:0 15px}#DIV_54:after,#DIV_54:before,#DIV_60:after,#DIV_60:before{min-height:auto;min-width:auto}#DIV_54:after,#DIV_54:before,#DIV_55,#DIV_60:after,#DIV_60:before,#DIV_61{box-sizing:border-box;color:#fff;text-align:left;-webkit-text-decoration:none solid #fff;text-decoration:none solid #fff;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-size-adjust:100%;-webkit-column-rule-color:#fff;-moz-column-rule-color:#fff;column-rule-color:#fff;caret-color:#fff;border:0 #fff;font:normal normal 400 normal 18px/29.9999px archiaregular,arial,sans-serif;outline:0 none #fff}#DIV_55,#DIV_61{height:38px;width:247.156px;-webkit-perspective-origin:123.578px 19px;perspective-origin:123.578px 19px;-webkit-transform-origin:123.578px 19px;transform-origin:123.578px 19px}#DIV_55:after,#DIV_55:before,#DIV_61:after,#DIV_61:before{box-sizing:border-box;color:#fff;text-align:left;-webkit-text-decoration:none solid #fff;text-decoration:none solid #fff;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-size-adjust:100%;-webkit-column-rule-color:#fff;-moz-column-rule-color:#fff;column-rule-color:#fff;caret-color:#fff;border:0 #fff;font:normal normal 400 normal 18px/29.9999px archiaregular,arial,sans-serif;outline:0 none #fff}#A_56{-webkit-perspective-origin:0 0;perspective-origin:0 0;-webkit-transform-origin:0 0;transform-origin:0 0}#A_56,#A_56:after,#A_56:before{box-sizing:border-box;color:#007bff;text-align:left;-webkit-text-decoration:none solid #007bff;text-decoration:none solid #007bff;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-size-adjust:100%;white-space:nowrap;-webkit-column-rule-color:#007bff;-moz-column-rule-color:#007bff;column-rule-color:#007bff;caret-color:#007bff;border:0 #007bff;font:normal normal 400 normal 18px/29.9999px archiaregular,arial,sans-serif;outline:0 none #007bff}#SPAN_57{box-shadow:0 10px 15px 1px rgba(0,0,0,.15);display:inline-block;height:38px;vertical-align:middle;width:39px;-webkit-perspective-origin:19.5px 19px;perspective-origin:19.5px 19px;-webkit-transform-origin:19.5px 19px;transform-origin:19.5px 19px;background:#638425 none repeat scroll 0 0/auto padding-box border-box;border:1px solid #638425;border-radius:100px 100px 100px 100px;padding:8px 8px 7px;-webkit-transition:box-shadow .2s ease-out 0s,background .2s ease-out 0s;transition:box-shadow .2s ease-out 0s,background .2s ease-out 0s}#SPAN_57,#SPAN_57:after{box-sizing:border-box;color:#fff;cursor:pointer;text-align:center;-webkit-text-decoration:none solid #fff;text-decoration:none solid #fff;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-size-adjust:100%;-webkit-column-rule-color:#fff;-moz-column-rule-color:#fff;column-rule-color:#fff;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;caret-color:#fff;font:normal normal 400 normal 14px/21px archiabold,arial,sans-serif;outline:0 none #fff}#SPAN_57:after{border:0 #fff}#SPAN_57:before{font:normal normal 400 normal 14px/21px archiabold,arial,sans-serif}#EM_58,#SPAN_57:before{box-sizing:border-box;color:#fff;cursor:pointer;text-align:center;-webkit-text-decoration:none solid #fff;text-decoration:none solid #fff;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-size-adjust:100%;-webkit-column-rule-color:#fff;-moz-column-rule-color:#fff;column-rule-color:#fff;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;caret-color:#fff;border:0 #fff;outline:0 none #fff}#EM_58{display:inline-block;height:14px;min-width:21px;width:21px;-webkit-perspective-origin:10.5px 7px;perspective-origin:10.5px 7px;-webkit-transform-origin:10.5px 7px;transform-origin:10.5px 7px;font:normal normal 900 normal 14px/14px Font Awesome\ 5 Pro}#EM_58:after,#EM_58:before{box-sizing:border-box;color:#fff;cursor:pointer;text-align:center;-webkit-text-decoration:none solid #fff;text-decoration:none solid #fff;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-size-adjust:100%;-webkit-column-rule-color:#fff;-moz-column-rule-color:#fff;column-rule-color:#fff;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;caret-color:#fff;border:0 #fff;font:normal normal 900 normal 14px/14px Font Awesome\ 5 Pro;outline:0 none #fff}#EM_58:before{content:'"\F095"';-webkit-perspective-origin:0 0;perspective-origin:0 0;-webkit-transform-origin:0 0;transform-origin:0 0}#SPAN_59{bottom:0;display:inline-block;height:29px;left:0;position:relative;right:0;top:0;width:150.469px;-webkit-perspective-origin:75.2344px 14.5px;perspective-origin:75.2344px 14.5px;-webkit-transform-origin:75.2344px 14.5px;transform-origin:75.2344px 14.5px;margin:0 0 0 7px}#SPAN_59,#SPAN_59:after,#SPAN_59:before{box-sizing:border-box;color:#fff;cursor:pointer;text-align:left;-webkit-text-decoration:none solid #fff;text-decoration:none solid #fff;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-size-adjust:100%;white-space:nowrap;-webkit-column-rule-color:#fff;-moz-column-rule-color:#fff;column-rule-color:#fff;caret-color:#fff;border:0 #fff;font:normal normal 400 normal 24px/29.9999px archiabold,arial,sans-serif;outline:0 none #fff}#SPAN_59:before{bottom:0;content:'""';display:block;height:2px;left:0;position:absolute;right:0;top:27px;width:150.469px;-webkit-perspective-origin:75.2344px 1px;perspective-origin:75.2344px 1px;-webkit-transform-origin:75.2344px 1px;transform-origin:75.2344px 1px;background:#638425 none repeat scroll 0 0/auto padding-box border-box;-webkit-transition:all .175s linear 0s;transition:all .175s linear 0s}#UL_62{display:flex;height:38px;width:247.156px;-webkit-perspective-origin:123.578px 19px;perspective-origin:123.578px 19px;-webkit-transform-origin:123.578px 19px;transform-origin:123.578px 19px;margin:0;padding:0}#UL_62,#UL_62:after{box-sizing:border-box;color:#fff;text-align:left;-webkit-text-decoration:none solid #fff;text-decoration:none solid #fff;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-size-adjust:100%;-webkit-column-rule-color:#fff;-moz-column-rule-color:#fff;column-rule-color:#fff;caret-color:#fff;border:0 #fff;font:normal normal 400 normal 18px/29.9999px archiaregular,arial,sans-serif;outline:0 none #fff}#UL_62:after{clear:both;content:'""';display:table;height:0;min-height:auto;min-width:auto;width:0;-webkit-perspective-origin:0 0;perspective-origin:0 0;-webkit-transform-origin:0 0;transform-origin:0 0}#UL_62:before{box-sizing:border-box;color:#fff;display:block;text-align:left;-webkit-text-decoration:none solid #fff;text-decoration:none solid #fff;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-size-adjust:100%;-webkit-column-rule-color:#fff;-moz-column-rule-color:#fff;column-rule-color:#fff;caret-color:#fff;border:0 #fff;font:normal normal 400 normal 18px/29.9999px archiaregular,arial,sans-serif;outline:0 none #fff}#LI_63,#LI_67,#LI_71{height:38px;width:44.0469px;-webkit-perspective-origin:22.0156px 19px;perspective-origin:22.0156px 19px;-webkit-transform-origin:22.0234px 19px;transform-origin:22.0234px 19px;margin:0 15px 0 0}#LI_63,#LI_63:after,#LI_63:before,#LI_67,#LI_67:after,#LI_67:before,#LI_71,#LI_71:after,#LI_71:before{box-sizing:border-box;color:#fff;min-height:auto;min-width:auto;-webkit-text-decoration:none solid #fff;text-decoration:none solid #fff;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-size-adjust:100%;-webkit-column-rule-color:#fff;-moz-column-rule-color:#fff;column-rule-color:#fff;caret-color:#fff;border:0 #fff;font:normal normal 400 normal 18px/29.9999px archiaregular,arial,sans-serif;list-style:none outside none;outline:0 none #fff}#A_64,#A_68,#A_72{-webkit-text-decoration:underline solid #d9e2c7;text-decoration:underline solid #d9e2c7;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-size-adjust:100%;-webkit-perspective-origin:0 0;perspective-origin:0 0;-webkit-transform-origin:0 0;transform-origin:0 0}#A_64,#A_64:after,#A_68,#A_68:after,#A_72,#A_72:after{box-sizing:border-box;color:#d9e2c7;text-align:left;white-space:nowrap;-webkit-column-rule-color:#d9e2c7;-moz-column-rule-color:#d9e2c7;column-rule-color:#d9e2c7;caret-color:#d9e2c7;border:0 #d9e2c7;font:normal normal 400 normal 18px/29.9999px archiaregular,arial,sans-serif;list-style:none outside none;outline:0 none #d9e2c7}#A_64:after,#A_68:after,#A_72:after{-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-size-adjust:100%}#A_64:after,#A_64:before,#A_68:after,#A_68:before,#A_72:after,#A_72:before{-webkit-text-decoration:none solid #d9e2c7;text-decoration:none solid #d9e2c7}#A_64:before,#A_68:before,#A_72:before{box-sizing:border-box;color:#d9e2c7;text-align:left;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-size-adjust:100%;white-space:nowrap;-webkit-column-rule-color:#d9e2c7;-moz-column-rule-color:#d9e2c7;column-rule-color:#d9e2c7;caret-color:#d9e2c7;border:0 #d9e2c7;font:normal normal 400 normal 18px/29.9999px archiaregular,arial,sans-serif;list-style:none outside none;outline:0 none #d9e2c7}#SPAN_65,#SPAN_69,#SPAN_73{box-shadow:0 10px 15px 1px rgba(0,0,0,.15);display:inline-block;height:38px;vertical-align:middle;width:39px;-webkit-perspective-origin:19.5px 19px;perspective-origin:19.5px 19px;-webkit-transform-origin:19.5px 19px;transform-origin:19.5px 19px;background:#638425 none repeat scroll 0 0/auto padding-box border-box;border:1px solid #638425;border-radius:100px 100px 100px 100px;padding:8px 8px 7px;-webkit-transition:box-shadow .2s ease-out 0s,background .2s ease-out 0s;transition:box-shadow .2s ease-out 0s,background .2s ease-out 0s}#SPAN_65,#SPAN_65:after,#SPAN_69,#SPAN_69:after,#SPAN_73,#SPAN_73:after{box-sizing:border-box;color:#fff;cursor:pointer;text-align:center;-webkit-text-decoration:none solid #fff;text-decoration:none solid #fff;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-size-adjust:100%;-webkit-column-rule-color:#fff;-moz-column-rule-color:#fff;column-rule-color:#fff;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;caret-color:#fff;font:normal normal 400 normal 14px/21px archiabold,arial,sans-serif;list-style:none outside none;outline:0 none #fff}#SPAN_65:after,#SPAN_69:after,#SPAN_73:after{border:0 #fff}#SPAN_65:before,#SPAN_69:before,#SPAN_73:before{font:normal normal 400 normal 14px/21px archiabold,arial,sans-serif}#I_66,#SPAN_65:before,#SPAN_69:before,#SPAN_73:before{box-sizing:border-box;color:#fff;cursor:pointer;text-align:center;-webkit-text-decoration:none solid #fff;text-decoration:none solid #fff;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-size-adjust:100%;-webkit-column-rule-color:#fff;-moz-column-rule-color:#fff;column-rule-color:#fff;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;caret-color:#fff;border:0 #fff;list-style:none outside none;outline:0 none #fff}#I_66{display:inline-block;height:14px;min-width:21px;width:21px;-webkit-perspective-origin:10.5px 7px;perspective-origin:10.5px 7px;-webkit-transform-origin:10.5px 7px;transform-origin:10.5px 7px;font:normal normal 400 normal 14px/14px Font Awesome\ 5 Brands}#I_66:after,#I_66:before{box-sizing:border-box;color:#fff;cursor:pointer;text-align:center;-webkit-text-decoration:none solid #fff;text-decoration:none solid #fff;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-size-adjust:100%;-webkit-column-rule-color:#fff;-moz-column-rule-color:#fff;column-rule-color:#fff;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;caret-color:#fff;border:0 #fff;font:normal normal 400 normal 14px/14px Font Awesome\ 5 Brands;list-style:none outside none;outline:0 none #fff}#I_66:before{content:'"\F0E1"';-webkit-perspective-origin:0 0;perspective-origin:0 0;-webkit-transform-origin:0 0;transform-origin:0 0}#I_70{display:inline-block;height:14px;min-width:21px;width:21px;-webkit-perspective-origin:10.5px 7px;perspective-origin:10.5px 7px;-webkit-transform-origin:10.5px 7px;transform-origin:10.5px 7px}#I_70,#I_70:after,#I_70:before{box-sizing:border-box;color:#fff;cursor:pointer;text-align:center;-webkit-text-decoration:none solid #fff;text-decoration:none solid #fff;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-size-adjust:100%;-webkit-column-rule-color:#fff;-moz-column-rule-color:#fff;column-rule-color:#fff;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;caret-color:#fff;border:0 #fff;font:normal normal 400 normal 14px/14px Font Awesome\ 5 Brands;list-style:none outside none;outline:0 none #fff}#I_70:before{content:'"\F099"';-webkit-perspective-origin:0 0;perspective-origin:0 0;-webkit-transform-origin:0 0;transform-origin:0 0}#I_74{display:inline-block;height:14px;min-width:21px;width:21px;-webkit-perspective-origin:10.5px 7px;perspective-origin:10.5px 7px;-webkit-transform-origin:10.5px 7px;transform-origin:10.5px 7px}#I_74,#I_74:after,#I_74:before{box-sizing:border-box;color:#fff;cursor:pointer;text-align:center;-webkit-text-decoration:none solid #fff;text-decoration:none solid #fff;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-size-adjust:100%;-webkit-column-rule-color:#fff;-moz-column-rule-color:#fff;column-rule-color:#fff;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;caret-color:#fff;border:0 #fff;font:normal normal 400 normal 14px/14px Font Awesome\ 5 Brands;list-style:none outside none;outline:0 none #fff}#I_74:before{content:'"\F39E"';-webkit-perspective-origin:0 0;perspective-origin:0 0;-webkit-transform-origin:0 0;transform-origin:0 0}#DIV_75{height:0;width:1783px;-webkit-perspective-origin:891.5px 0;perspective-origin:891.5px 0;-webkit-transform-origin:891.5px 0;transform-origin:891.5px 0}#DIV_75,#DIV_75:after,#DIV_75:before{box-sizing:border-box;color:#535353;text-align:left;-webkit-text-decoration:none solid #535353;text-decoration:none solid #535353;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-size-adjust:100%;-webkit-column-rule-color:#535353;-moz-column-rule-color:#535353;column-rule-color:#535353;caret-color:#535353;border:0 #535353;font:normal normal 400 normal 18px/29.9999px archiaregular,arial,sans-serif;outline:0 none #535353}</style><link as="script" rel="preload" href="/component---src-templates-blog-post-js-6fa71394ab0e21d15089.js"/><link as="script" rel="preload" href="/app-12eb7abadf2cd370a124.js"/><link as="script" rel="preload" href="/2-be4208690712712db845.js"/><link as="script" rel="preload" href="/1-54e35b81647a395f3b32.js"/><link as="script" rel="preload" href="/styles-3575ff81eeb381c6886b.js"/><link as="script" rel="preload" href="/webpack-runtime-b4c871f42a29bcd84626.js"/><link as="fetch" rel="preload" href="/page-data/app/page-data.json" crossorigin="use-credentials"/></head><body><noscript id="gatsby-noscript">This app works best with JavaScript enabled.</noscript><div id="___gatsby"><div style="outline:none" tabindex="-1" role="group" id="gatsby-focus-wrapper"><div style="margin-left:auto;margin-right:auto;max-width:42rem;padding:2.625rem 1.3125rem"><h3 style="font-family:Montserrat, sans-serif;margin-top:0;margin-bottom:-1.75rem"><a style="box-shadow:none;text-decoration:none;color:inherit" href="/">GPPainHelp test</a></h3><h1></h1><p style="font-size:0.83255rem;line-height:1.75rem;display:block;margin-bottom:1.75rem;margin-top:-1.75rem"></p><div><div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">    </code></pre></div>
+<h1>GP Pain Help</h1>
+<p>[<img src="images/mainicon-information-big.png" alt="Information"></p>
+<p>Introduction and Disclaimer</p>
+<p>](#intro)</p>
+<p>[<img src="images/mainicon-tree-big.png" alt="Treatment Decision Tree"></p>
+<p>Treatment Decision Tree</p>
+<p>](#treatment-intro)</p>
+<p>[<img src="images/mainicon-contenthub-big.png" alt="Content Hub"></p>
+<p>Content Hub</p>
+<p>](#content-hub)</p>
+<p>[<img src="images/mainicon-breakthrough-big.png" alt="Breakthrough Pain"></p>
+<p>Breakthrough Pain</p>
+<p>](#breakthrough)</p>
+<p>[<img src="images/main-resources-big.png" alt="Resources"></p>
+<p>Resources</p>
+<p>](#resources)</p>
+<p>[<img src="images/mainicon-trouble-big.png" alt="Trouble Shooting"></p>
+<p>Trouble Shooting</p>
+<p>](#troubleshooting)</p>
+<p>[<img src="images/mainicon-dose-big.png" alt="Dose Conversion"></p>
+<p>Dose Conversion</p>
+<p>](#dose)</p>
+<p>[<img src="images/mainicon-faq-big.png" alt="Patient FAQs"></p>
+<p>Patient FAQs</p>
+<p>](#faq)</p>
+<p>[<img src="images/mainicon-gloss-big.png" alt="Glossary"></p>
+<p>Glossary/Index</p>
+<p>](#glossary)</p>
+<p><a href="#home"><img src="images/backarrow.png" alt="back"></a></p>
+<h1>Welcome</h1>
+<p><a href="#home"><img src="images/homebtn.png" alt="home"></a></p>
+<h2>Introduction</h2>
+<p>Welcome to the GP Pain Help App, to help GPs manage cancer pain in their patients. Data generated by use of this app may be used in de-identified form for research by the Centre for Palliative Care Research and Education. Please click the box below to indicate you agree to participate in this research which potentially will improve the care of your patients with cancer pain.</p>
+<h2>General principles</h2>
+<p>Opioids are the only pharmacological class of drug with the ability to control severe pain</p>
+<p>Use oral route first line where possible</p>
+<p>Dose regularly with controlled-release (CR) preparations, with as required (prn) immediate-release (IR) doses (1/6 daily dose) to assess analgesic requirements</p>
+<p>Titrate dose against effect and <a href="#contenthub-opioid">toxicity</a> – consider switching to another class of opioid if <a href="#contenthub-opioid">toxicity</a> becomes dose-limiting</p>
+<h2>Disclaimer</h2>
+<p>The information within this app is presented by the Centre for Palliative Care Research and Education (CPCRE) for the purpose of disseminating health information free of charge and for the benefit of the healthcare professional.</p>
+<p>While CPCRE has exercised due care in ensuring the accuracy of the material herein, the information provided should be treated as a guide only to appropriate practice, to be followed subject to the clinician’s judgment and the patient’s preference in each individual case.</p>
+<p>CPCRE does not accept any liability for any injury, loss or damage incurred by use of or reliance on the information contained herein.</p>
+<h2>Acknowledgement</h2>
+<p>CPCRE acknowledges the assistance of Professor Janet Hardy and Dr Phillip Good in development of this pain aid for GPs.</p>
+<p><a href="#home"><img src="images/backarrow.png" alt="back"></a></p>
+<h1>Treatment Tree</h1>
+<p><a href="#home"><img src="images/homebtn.png" alt="home"></a></p>
+<p>Select what type of pain your patient is experiencing</p>
+<p>[</p>
+<p>Mild/Moderate</p>
+<p>](#mild-mod)</p>
+<p>[</p>
+<p>Moderate/Severe</p>
+<p>](#mod-severe)</p>
+<p>[</p>
+<p>Breakthrough</p>
+<p>](#treatment_breakthrough)</p>
+<h2>Assessment</h2>
+<p>Pain should be assessed by:</p>
+<ul>
+<li>Taking a history</li>
+<li>Performing a physical examination</li>
+<li>Identifying other factors that may influence the pain experience</li>
+<li>Regular review</li>
+</ul>
+<p>For more information see CareSearch ’ <a href="http://www.caresearch.com.au/caresearch/tabid/748/Default.aspx">Assessment Tools</a>‘.</p>
+<p><a href="#treatment-intro"><img src="images/backarrow.png" alt="back"></a></p>
+<h1>Mild to Moderate Pain</h1>
+<p><a href="#home"><img src="images/homebtn.png" alt="home"></a></p>
+<h2>Treatment of mild to moderate pain</h2>
+<p>Mild to moderate pain is most commonly controlled by paracetamol or non-steroidal anti-inflammatory drugs (NSAIDs).</p>
+<p>Paracetamol dose: 500-1000mg every 4-6 hours to a maximum of 4 g daily.</p>
+<p>NSAIDs: appropriate for mild to moderate pain related to inflammation, tissue injury, and metastatic bone pain (Therapeutic Guidelines, 2010).</p>
+<p>Adverse effects of NSAIDs:</p>
+<ul>
+<li>Gastrointestinal toxicity</li>
+<li>
+<p>Cardiovascular toxicity</p>
+<p>(Source: Therapeutic Guidelines, 2010).</p>
+<p>Patients taking NSAIDs should have their cardiovascular risks closely monitored and actively managed. See <a href="http://www.tg.org.au/index.php?sectionid=42">Therapeutic Guidelines: Cardiovascular</a> for further information.</p>
+<p>Patients needing low dose aspirin for cardiovascular protection should continue to take it even if needing NSAIDs; they should be monitored for GI adverse effects.</p>
+<p>Separation in time of dose is advised where NSAIDs such as ibuprofen may interfere with effect of low doseaspirin on platelets.</p>
+</li>
+<li>
+<p>Renal toxicity</p>
+<p>(Source: Therapeutic Guidelines, 2010).</p>
+<p>All NSAIDs can cause renal impairment. Renal toxicity is no less with COX-2-selective inhibitors.</p>
+</li>
+</ul>
+<p><a href="#treatment-intro"><img src="images/backarrow.png" alt="back"></a></p>
+<h1>Moderate to Severe Pain</h1>
+<p><a href="#home"><img src="images/homebtn.png" alt="home"></a></p>
+<p>[</p>
+<p>First line treatment</p>
+<p>](#firstline)</p>
+<p>[</p>
+<p>Second line treatment</p>
+<p>](#secondline)</p>
+<p>[</p>
+<p>Some types of pain</p>
+<p>](#sometypes)</p>
+<p>[</p>
+<p>I’m not sure</p>
+<p>](#notsure)</p>
+<p><a href="#mod-severe"><img src="images/backarrow.png" alt="back"></a></p>
+<h1>First line treatment</h1>
+<p><a href="#home"><img src="images/homebtn.png" alt="home"></a></p>
+<p>First line treatment:</p>
+<ol>
+<li>Opioid</li>
+<li>Plus co-analgesic/adjuvant drug where neuropathic pain involved</li>
+</ol>
+<p>Opioids</p>
+<p>Source: Therapeutic Guidelines, 2010</p>
+<p>Opioid analgesics are used to treat moderate to severe pain; they diminish both the sensation and affective response to pain. NB: “Safe use requires knowledge of available opioids, their relative indications, formulations and routes of administration, and awareness of potential adverse effects and how to manage these” (Therapeutic Guidelines: Palliative Care, 2010, p. 100).</p>
+<p>Opioid preparations may be available as:</p>
+<ul>
+<li>immediate release</li>
+<li>modified release</li>
+<li>a combination of both</li>
+</ul>
+<p>Modified release preparations should never be crushed or chewed as this can result in a large dose being absorbed over a short period.</p>
+<p>See the <a href="#dose">Dose Conversion</a> tables for converting from other opioids to an equianalgesic dose of oral morphine, or converting from oral morphine to equianalgesic doses of other opioids.</p>
+<p>Antiepileptic drugs (Therapeutic Guidelines, 2010):</p>
+<p>sodium valproate 200 mg orally, once or twice daily, increasing as tolerated according to patient response every 2 days to maximum of 1500 mg daily in divided doses</p>
+<p>OR</p>
+<p>gabapentin (consult palliative care team) … OR<br>
+pregabalin (consult palliative care team) … OR<br>
+carbamazepine (consult palliative care team) … OR<br>
+clonazepam 0.5 mg orally/subcutaneously/sublingually, twice daily, increasing to maximum of 2 mg twice daily</p>
+<p>Antidepressant drugs</p>
+<p>amitriptyline 10-25 mg orally, at night, increasing every 7 days to a usual maximum dose of 75 mg at night OR</p>
+<p>nortriptyline 10-25 mg orally, at night, increasing every 7 days to a usual maximum dose of 75 mg at night</p>
+<p>For specific suggestions regarding starting doses of co-analgesics, contact your local palliative care team.</p>
+<p>Neuropathic pain:</p>
+<p>Patients experiencing pain related to cancer may have an element of neuropathic pain, which responds only partially to opioids. The use of co-analgesics may be required e.g. antiepileptic drugs or antidepressant drugs.</p>
+<p>Determining whether pain is neuropathic</p>
+<p>Does the patient describe their pain in this way?</p>
+<ul>
+<li>Pins and needles, tingling, burning, lancinating, shooting</li>
+<li>Allodynia</li>
+<li>Pain in missing body part</li>
+<li>Pain in a numb area</li>
+</ul>
+<p>Any or all of these symptoms suggest neuropathic pain related to nerve involvement. Because neuropathic pain responds only partially to opioids, the use of co-analgesic or adjuvant drugs may be necessary.</p>
+<p><a href="#mod-severe"><img src="images/backarrow.png" alt="back"></a></p>
+<h1>Second line treatment</h1>
+<p><a href="#home"><img src="images/homebtn.png" alt="home"></a></p>
+<p>Where pain is not adequately controlled, consider the following:</p>
+<p>How many breakthrough (BT) doses has the patient required in the last 24 hours? If more than 2-3 doses in 24 hours, the regular daily dose of opioid may need to be adjusted by adding the total BT doses per 24 hours to the daily dose, up to a 50% increase in the daily dose.</p>
+<p>NB: Increase the dose in this way no more often than every 2-3 days.</p>
+<p>If not already treating for neuropathic pain, consider whether that might be an issue</p>
+<p>Gradually increase the dose of the co-analgesic drug/s according to recommendations for antiepileptics or antidepressants.</p>
+<p><a href="#mod-severe"><img src="images/backarrow.png" alt="back"></a></p>
+<h1>Some types of pain</h1>
+<p><a href="#home"><img src="images/homebtn.png" alt="home"></a></p>
+<p>Nociceptive superficial somatic pain</p>
+<p>If the patient describes their pain as:</p>
+<ul>
+<li>sharp</li>
+<li>stinging</li>
+<li>hot</li>
+</ul>
+<p>think nociceptive superficial somatic pain e.g. from malignant ulcers or stomatitis use <a href="#firstline">opioids</a></p>
+<p>Nociceptive deep somatic pain</p>
+<p>Described as dull, throbbing, aching</p>
+<p>May relate to:</p>
+<ul>
+<li>liver capsule distension – use corticosteroids</li>
+<li><a href="#contenthub-difficultcontrol">bone metastases</a></li>
+</ul>
+<p>Visceral nociceptive pain</p>
+<p>Does the patient describe their pain as:</p>
+<ul>
+<li>cramping or colicky</li>
+<li>dull, referred pain</li>
+</ul>
+<p>Symptoms indicate visceral nociceptive pain. Use:</p>
+<ul>
+<li>
+<p>opioids, plus</p>
+<ul>
+<li>antispasmodics if colicky pain</li>
+<li>paracetamol, corticosteroids if constant pain</li>
+</ul>
+</li>
+</ul>
+<p>Skeletal muscle spasm pain</p>
+<p>Use:</p>
+<ul>
+<li>diazepam 2-5 mg orally up to three times daily</li>
+<li>baclofen 5 mg orally, 3 times daily, increasing every 3 days to 10-25 mg orally, 3 times daily</li>
+</ul>
+<p>Smooth muscle spasm pain</p>
+<p>Hyoscine hydrobromide or hyoscine butylbromide may be used with opioids for cramping pain related to bowel obstruction. Use:</p>
+<p>hyoscine hydrobromide</p>
+<ul>
+<li>0.4 mg SC, 4-hourly or</li>
+<li>up to 1.6 mg/24 hours via continuous subcutaneous infusion (CSCI)</li>
+</ul>
+<p>OR</p>
+<p>hyoscine butylbromide</p>
+<ul>
+<li>10-20 mg SC, 4 hourly or</li>
+<li>60-80 mg/24 hours initially by CSCI; titrate to effect to maximum of 120 mg/24 hours</li>
+</ul>
+<p><a href="#mod-severe"><img src="images/backarrow.png" alt="back"></a></p>
+<h1>I’m not sure</h1>
+<p><a href="#home"><img src="images/homebtn.png" alt="home"></a></p>
+<p>I’m not sure</p>
+<p>If you have any concerns at all about your patient’s pain or other symptom management, contact their specialist palliative care team.</p>
+<p>Or see <a href="#troubleshooting">Trouble Shooting</a> for contact details for Queensland specialist palliative care teams.</p>
+<p><a href="#treatment-intro"><img src="images/backarrow.png" alt="back"></a></p>
+<h1>Breakthrough Pain</h1>
+<p><a href="#home"><img src="images/homebtn.png" alt="home"></a></p>
+<p>Breakthrough pain occurs between regular doses of analgesia; it reflects an increase in pain level beyond the control of the baseline analgesic.</p>
+<p>In this situation the patient should be given an additional, or breakthrough, dose of their regular opioid.</p>
+<p>The breakthrough (BT) dose ordered should be one-twelfth to one-sixth of the total daily dose (50% to 100% of the regular 4-hourly dose). The patient should be instructed to take the BT dose as often as necessary to control the pain. BT doses should be given no more frequently than every 30 minutes.</p>
+<p>The regular analgesic dose should be reviewed if BT pain is not controlled after 3 doses.</p>
+<p>The regular dose of opioid should be taken at the scheduled time.</p>
+<p>(Therapeutic Guidelines: Palliative Care)</p>
+<p><a href="#home"><img src="images/backarrow.png" alt="back"></a></p>
+<h1>Content Hub</h1>
+<p><a href="#home"><img src="images/homebtn.png" alt="home"></a></p>
+<p>This section provides general information about various analgesics and aspects of pain management.</p>
+<p>[</p>
+<p>Opioids</p>
+<p>](#contenthub-opioid)</p>
+<p>[</p>
+<p>Choice of opioid</p>
+<p>](#contenthub-choice)</p>
+<p>[</p>
+<p>Route of delivery</p>
+<p>](#contenthub-route)</p>
+<p>[</p>
+<p>Individual opioids</p>
+<p>](#contenthub-individual)</p>
+<p>[</p>
+<p>How to initiate an opioid</p>
+<p>](#contenthub-howtoinitiate)</p>
+<p>[</p>
+<p>Difficult pain control</p>
+<p>](#contenthub-difficultcontrol)</p>
+<p>[</p>
+<p>Opioids in special populations</p>
+<p>](#contenthub-specialpop)</p>
+<p>[</p>
+<p>Opioids to avoid</p>
+<p>](#contenthub-avoid)</p>
+<p>[</p>
+<p>Morphine myths and facts</p>
+<p>](#contenthub-mythsfacts)</p>
+<p>[</p>
+<p>Breakthrough Pain</p>
+<p>](#contenthub-breakthrough)</p>
+<p>[</p>
+<p>Incident Pain</p>
+<p>](#contenthub-incident)</p>
+<p>[</p>
+<p>Some types of pain</p>
+<p>](#contenthub-types)</p>
+<p><a href="#content-hub"><img src="images/backarrow.png" alt="back"></a></p>
+<h1>Opioids</h1>
+<p><a href="#home"><img src="images/homebtn.png" alt="home"></a></p>
+<p>[</p>
+<p>Classification</p>
+<p>](#contenthub-opioid)</p>
+<p>Opiates are naturally occurring compounds derived from the juice of the opium poppy (codeine, morphine, papaveretum)</p>
+<p>Opioids refer to both naturally-occurring and synthetic drugs that have morphine-like activity</p>
+<p>Opioids can be used for mild to moderate pain (e.g. codeine, dihydrocodeine)</p>
+<p>Opioids are recommended for moderate to severe pain (e.g. morphine, oxycodone, fentanyl, hydromorphone, buprenorphine, methadone)</p>
+<p>[</p>
+<p>Side effects</p>
+<p>](#contenthub-opioid)</p>
+<p>All opioids have a similar side-effect profile:</p>
+<ul>
+<li>Sedation, for the first few days after initiation, then with excessive dosing/overdose</li>
+<li>Nausea and vomiting; often subsides after few days, but can be persistent requiring aggressive treatment</li>
+<li>Constipation; almost universal, prophylactic laxatives essential when patient started on opioid</li>
+<li>Bad dreams</li>
+</ul>
+<p>[</p>
+<p>Signs of excessive dosing/toxicity</p>
+<p>](#contenthub-opioid)</p>
+<ul>
+<li>Drowsiness, difficulty rousing</li>
+<li>Myoclonic jerks, may need treatment with benzodiazepines</li>
+<li>Respiratory depression; if respiratory rate &#x3C;8/min and/or depressed oxygen saturations then can be reversed with naloxone (dilute 400mcg vial in 10ml N/Saline and deliver slowly in amounts of 0.5-1ml every 2-3 minutes)</li>
+<li>Hallucinations; consider opioid switch</li>
+<li>Itch; common in children, rare in adults. Can switch to opioid of different class</li>
+</ul>
+<p>[</p>
+<p>Pain related to tumour oedema</p>
+<p>](#contenthub-opioid)</p>
+<p>Corticosteroids will temporarily reduce tumour related oedema. Use:</p>
+<ul>
+<li>Dexamethasone 4-8 mg orally or SC, daily in the morning OR</li>
+<li>Prednisolone 25-100 mg orally, daily in the morning</li>
+</ul>
+<p><a href="#content-hub"><img src="images/backarrow.png" alt="back"></a></p>
+<h1>Choice of opioid</h1>
+<p><a href="#home"><img src="images/homebtn.png" alt="home"></a></p>
+<p>There is no evidence that any one opioid is significantly more efficacious or less toxic than any other at an equianalgesic dose. The choice of opioid depends on a number of factors:</p>
+<p>Ability to swallow: oral route is preferred; if unable to swallow or compromised GI tract consider transdermal (e.g. fentanyl patch, buprenorphine patch) or parenteral route (see below)</p>
+<p>Impaired renal function: avoid morphine (can be used at lower doses, less frequently), caution with oxycodone or hydromorphone. Recommended opioids are fentanyl, buprenorphine or methadone</p>
+<p>Impaired liver function: caution with oxycodone</p>
+<p>Allergies/intolerance:rare, often reflect previous adverse event (e.g. nausea and vomiting following post-op opioids). If true allergy, rotate to opioid of different class (see classification)</p>
+<p>Constipation/ileus/bowel obstruction: slowing of bowel transit time is a common feature of all opioids. Lipophilic opioids (fentanyl, buprenorphine) may be less constipating. Consider combination preparation of oxycodone and naloxone (Targin©), or parenteral formulations</p>
+<p>Age: morphine tends to be poorly tolerated in the elderly (probably as a reflection of impaired renal function). Buprenorphine patches (Norspan©) give a continuous infusion of low-dose opioid.</p>
+<p>Cognitive function: consider once daily formulations or tablets/capsules that can be delivered in Webster packs where cognitive function impaired</p>
+<p>Compliance: consider transdermal preparations for improved compliance</p>
+<p>Cost: not all opioids are subsidised by the PBS</p>
+<p>Availability: some countries impose strict limitations on availability of opioids</p>
+<p>Experience: use a limited number of opioids and become familiar with their use; patients with difficult pain should be referred to palliative care or pain specialists</p>
+<p><a href="#content-hub"><img src="images/backarrow.png" alt="back"></a></p>
+<h1>Route of delivery</h1>
+<p><a href="#home"><img src="images/homebtn.png" alt="home"></a></p>
+<p>Oral: preferred route of opioid delivery; as effective as parenteral opioid at equianalgesic doses</p>
+<p>Parenteral: if oral route not possible (e.g. head and neck tumour, bowel obstruction, nausea/vomiting)one or more of the following routes may be appropriate</p>
+<p>Subcutaneous: most opioids can be delivered by this route as a continuous infusion or by bolus dosing; methadone can be a skin irritant and must be diluted</p>
+<p>Intramuscular: there is little logic for using this route as opioids are well absorbed subcutaneously</p>
+<p>Intravenous: route of choice in the USA, dose is equivalent to subcutaneous dose</p>
+<p>Transdermal: several opioids are available in patch formulations that are well absorbed through the skin (e.g. fentanyl {Durogesic ©}, buprenorphine {Norspan ©})</p>
+<p>Other: transmucosal (fentanyl lozenge{Actiq ©}, buccal tablets), rectal suppositories, intranasal spray, sublingual drops</p>
+<p><a href="#content-hub"><img src="images/backarrow.png" alt="back"></a></p>
+<h1>Individual Opioids</h1>
+<p><a href="#home"><img src="images/homebtn.png" alt="home"></a></p>
+<p>[</p>
+<p>Buprenorphine</p>
+<p>](#contenthub-individual)</p>
+<p>Partial opioid agonist for moderate to severe pain</p>
+<p>Formulations see PBS A-Z Medicine Listing <a href="http://www.pbs.gov.au/browse/medicine-listing">www.pbs.gov.au/browse/medicine-listing</a>)*</p>
+<p>Benefits:</p>
+<ul>
+<li>Convenient (transdermal patch)</li>
+<li>Side effects such as erythema/pruritus generally transitory</li>
+<li>Suitable for the opioid naÏve patient</li>
+</ul>
+<p>Limitations</p>
+<ul>
+<li>Difficult to titrate if pain unstable</li>
+</ul>
+<p>[</p>
+<p>Codeine</p>
+<p>](#contenthub-individual)</p>
+<p>Analgesic for mild to moderate pain.</p>
+<p>Relatively weak analgesic, often used in combination with non-opioids e.g. paracetamol.</p>
+<p>Formulations: see PBS A-Z Medicine Listing (<a href="http://www.pbs.gov.au/browse/medicine-listing">www.pbs.gov.au/browse/medicine-listing</a>)</p>
+<p>Codeine phosphate</p>
+<ul>
+<li>Tablet 30mg</li>
+</ul>
+<p>Benefits:</p>
+<ul>
+<li>Useful for mild to moderate pain,</li>
+<li>Important role as anti-tussive and antidiarrhoeal agent</li>
+</ul>
+<p>Limitations:</p>
+<ul>
+<li>A subset of the population is unable to metabolise codeine to its active metabolite (morphine) and therefore derive no analgesic benefit from the drug</li>
+</ul>
+<p>Dose conversion : morphine to codeine conversion = 1:10</p>
+<p>[</p>
+<p>Fentanyl</p>
+<p>](#contenthub-individual)</p>
+<p>Opioid analgesic of short duration for management of moderate to severe pain</p>
+<p>Formulations:</p>
+<ul>
+<li>Transdermal patch (12,25,50,75 and 100mcg/hour),</li>
+<li>Transmucosal (Actiq, 200,400,600,800mcg lozenge),</li>
+<li>Injection (50 mcg/ml, no PBS subsidy)</li>
+</ul>
+<p>Benefits:</p>
+<ul>
+<li>Non parenteral formulations for patients unable to take oral meds</li>
+<li>Inactive metabolites</li>
+<li>Possibly less constipating (compared with morphine)</li>
+<li>Short half-life</li>
+<li>Safe in renal failure</li>
+</ul>
+<p>Limitations:</p>
+<ul>
+<li>No oral preparation</li>
+<li>Patch adhesion not always ideal</li>
+<li>Dose of patch limited by physical constraints</li>
+<li>Slow dose titration</li>
+<li>Short half life</li>
+</ul>
+<p>Dose conversion</p>
+<ul>
+<li>12.5mcg/hour patch = approx. 30-45mg oral morphine/day</li>
+<li>25mcg/hour patch= approx. 90mg oral morphine/day</li>
+<li>no correlation between fentanyl lozenge size and morphine dose,</li>
+<li>start with low dose and titrate</li>
+</ul>
+<p>[</p>
+<p>Hydromorphone</p>
+<p>](#contenthub-individual)</p>
+<p>Opioid analgesic for moderate to severe pain.</p>
+<p>Structurally similar to morphine but 5-7 times more potent.</p>
+<p>Formulations see PBS A-Z Medicine Listing (<a href="http://www.pbs.gov.au/browse/medicine-listing">www.pbs.gov.au/browse/medicine-listing</a>)*</p>
+<p>Benefits:</p>
+<ul>
+<li>Higher solubility → enables administration of more concentrated volume → smaller volume required than for morphine sulphate</li>
+</ul>
+<p>limitations:</p>
+<ul>
+<li>Adverse CNS reactions can occur when administered to patients with renal impairment</li>
+</ul>
+<p>[</p>
+<p>Methadone</p>
+<p>](#contenthub-individual)</p>
+<p>Synthetic opioid analgesic for severe pain</p>
+<p>Formulations</p>
+<ul>
+<li>Tablets 10mg, oral solution 5 mg/ml</li>
+</ul>
+<p>Benefits:</p>
+<ul>
+<li>Not dependent on renal function for elimination</li>
+<li>Cheap</li>
+<li>Anecdotal evidence of benefit in difficult pain situations</li>
+<li>Long half life allows once daily dosing</li>
+</ul>
+<p>Limitations:</p>
+<ul>
+<li>Difficult to titrate</li>
+<li>Unpredictable dose/response relationship and toxicity,</li>
+<li>Marked inter patient variability in response</li>
+</ul>
+<p>Dose conversion: several methods have been published (link to ref), specialist use only, many prefer to use small dose in combination with other opioids</p>
+<p>[</p>
+<p>Morphine</p>
+<p>](#contenthub-individual)</p>
+<p>Opioid analgesic for moderate to severe pain</p>
+<p>Formulations see PBS A-Z Medicine Listing (<a href="http://www.pbs.gov.au/browse/medicine-listing">www.pbs.gov.au/browse/medicine-listing</a>)*</p>
+<ul>
+<li>
+<p>Morphine hydrochloride</p>
+<ul>
+<li>Oral solution (2,5,10 mg/ml)</li>
+</ul>
+</li>
+<li>
+<p>Morphine sulphate</p>
+<ul>
+<li>Immediate release (IR) tablets (10,20,30mg),</li>
+<li>Controlled release (CR) tablets (5,10,15,30,60,100,200mg),</li>
+<li>CR capsules (30,60,90,120mg),</li>
+<li>CR granules in sachets (20, 30, 60, 100, 200mg),</li>
+<li>Injection (10,15, 30mg/ml)</li>
+</ul>
+</li>
+<li>
+<p>Morphine tartrate</p>
+<ul>
+<li>Injection (120mg/1.5ml)</li>
+</ul>
+</li>
+</ul>
+<p>Benefits:</p>
+<ul>
+<li>WHO opioid of choice world-wide</li>
+<li>Widely available (most countries)</li>
+<li>Extensive experience in use (by many over long time period)</li>
+<li>Simple to administer/titrate</li>
+<li>Wide variety of formulations</li>
+<li>Linear pharmacokinetics (no upper dose)</li>
+<li>Few drug interactions</li>
+<li>Cheap</li>
+</ul>
+<p>Limitations:</p>
+<ul>
+<li>Relatively poor systemic bioavailability</li>
+<li>Inter-individual variation in dose requirements</li>
+<li>Active metabolites</li>
+<li>Accumulation of both parent drug and metabolites in renal failure</li>
+<li>Narrow window between toxicity and effect</li>
+</ul>
+<p>Dose conversion: see opioid conversion tables</p>
+<p>[</p>
+<p>Oxycodone</p>
+<p>](#contenthub-individual)</p>
+<p>Semisynthetic narcotic analgesic for moderate to severe pain</p>
+<p>Formulations see PBS A-Z Medicine Listing (<a href="http://www.pbs.gov.au/browse/medicine-listing">www.pbs.gov.au/browse/medicine-listing</a>)*</p>
+<p>Benefits:</p>
+<ul>
+<li>Inactive metabolites</li>
+<li>Better bioavailability cf morphine</li>
+<li>‘Cleaner’ pharmacokinetics</li>
+<li>Probably better tolerated in renal failure cf morphine</li>
+<li>Wide range of formulations</li>
+<li>Not feared by patients (cf morphine)</li>
+</ul>
+<p>Limitations</p>
+<ul>
+<li>Potency often under-estimated</li>
+<li>Sometimes confused with codeine</li>
+<li>More expensive than morphine</li>
+<li>Potential for addiction</li>
+<li>Elimination influenced by hepatic impairment</li>
+<li>Indiscriminate use in non malignant pain</li>
+</ul>
+<p>Dose conversion: twice as potent as morphine (5mg oxycodone = 10mg morphine)</p>
+<p>[</p>
+<p>Tramadol</p>
+<p>](#contenthub-individual)</p>
+<p>Narcotic analgesic for moderate pain</p>
+<ul>
+<li>Not a true opioid</li>
+<li>Derivative of codeine</li>
+<li>Structurally similar to venlafaxine</li>
+<li>Mechanism of action involves opioid receptors and serotonin/noradrenaline transporters</li>
+</ul>
+<p>Formulations</p>
+<ul>
+<li>Tramadol hydrochloride, capsule (50mg)</li>
+<li>Tramadol hydrochloride, SR tablet (50, 100, 150, 200mg)</li>
+<li>Tramadol hydrochloride, oral liquid (100mg/ml)</li>
+<li>Tramadol hydrochloride, injection (100mg/2ml)</li>
+</ul>
+<p>Benefits:</p>
+<ul>
+<li>WHO ladder step 2 analgesic</li>
+<li>Does not carry negative stigma of morphine</li>
+<li>Low abuse and addiction potential</li>
+</ul>
+<p>Limitations</p>
+<ul>
+<li>Upper dose limit</li>
+<li>Drug interactions e.g. warfarin</li>
+<li>Potential for increased risk of serotonin toxicity</li>
+</ul>
+<p>Dose conversion: morphine to tramadol conversion= 1:10</p>
+<p><a href="#content-hub"><img src="images/backarrow.png" alt="back"></a></p>
+<h1>How to initiate an opioid</h1>
+<p><a href="#home"><img src="images/homebtn.png" alt="home"></a></p>
+<p>In patients with no hepatic or renal dysfunction, a total daily dose of 20–30 mg oral morphine equivalent is a reasonable starting point.</p>
+<p>Dosing</p>
+<ul>
+<li>Start with low dose immediate release preparation given every 4 hours</li>
+<li>Convert to controlled release (CR) preparation when dose requirement known after 2-3 days</li>
+<li>Continue to provide as required (prn) dose equivalent to 4 hourly dose</li>
+<li>Prescribe prophylactic laxatives</li>
+</ul>
+<p><a href="#content-hub"><img src="images/backarrow.png" alt="back"></a></p>
+<h1>Difficult pain control</h1>
+<p><a href="#home"><img src="images/homebtn.png" alt="home"></a></p>
+<p>In cases where pain is difficult to manage, consider the following.</p>
+<p>Co-analgesics</p>
+<p>Also called analgesic adjuvants, or adjuvant drugs, these are drug classes whose usual primary role is not pain relief, but can be used to supplement analgesics and improve pain control where other analgesics have not been totally effective. Co-analgesics include:</p>
+<ul>
+<li>
+<p>antiepileptics e.g.</p>
+<ul>
+<li>sodium valproate</li>
+<li>carbamazepine</li>
+<li>gabapentin/pregabalin</li>
+</ul>
+</li>
+<li>
+<p>antidepressants e.g.</p>
+<ul>
+<li>tricyclics</li>
+<li>seratonin and noradrenaline reuptake inhibitors (SNRIs)</li>
+</ul>
+</li>
+<li>antiarrhythmics</li>
+<li>clonidine</li>
+<li>corticosteroids</li>
+<li>bisphosphonates</li>
+<li>benzodiazepines</li>
+<li>skeletal muscle relaxants</li>
+<li>anticholinergics</li>
+<li>calcium channel blockers</li>
+</ul>
+<p>For more information about the various co-analgesic drugs and their possible place in the treatment of your patient, discuss with your local specialist palliative care team. Also see complete coverage in <a href="#resources">Therapeutic Guidelines: Palliative Care</a></p>
+<p>Bone metastases may be an issue © have investigations been done to rule this out? Single dose or fractionated radiotherapy can relieve the pain of bone metastases in over 80% of cases (Therapeutic Guidelines: Palliative Care).</p>
+<ul>
+<li>Treatment of bone pain may require a combination of paracetamol, NSAIDs, opioids and co-analgesics.</li>
+<li>
+<p>Bisphosphonates can reduce incidence and severity of bone pain. For bone pain use:</p>
+<ul>
+<li>Clodronate 1.6 g orally, in single or divided doses daily, on an empty stomach, increasing if required to 3.2 g daily OR</li>
+<li>Pamidronate 90 mg given IV monthly, diluted in 500 ml sodium chloride 0.9% or glucose 5%, infused over 2-4 hours OR</li>
+<li>Zoledronic acid 4 mg , in 100 ml sodium chloride 0.9% or glucose 5%, IV, infused over 15 minutes, given monthly</li>
+</ul>
+</li>
+</ul>
+<p>Optimise non pharmacological mx</p>
+<p>Non-pharmacological management of pain includes:</p>
+<ul>
+<li>Warm baths</li>
+<li>Music</li>
+<li>Distraction</li>
+<li>Hot packs</li>
+<li>Sheep skin</li>
+<li>Massage</li>
+<li>Relaxation</li>
+<li>Reassurance</li>
+<li>Prompt use of analgesia</li>
+<li>Diligent bowel care</li>
+<li>Soft mattress</li>
+<li>Spiritual/pastoral care</li>
+<li>Physiotherapy</li>
+<li>Occupational therapy</li>
+</ul>
+<p>Opioid switch</p>
+<p>Opioid switching or rotation may be necessary due to:</p>
+<ul>
+<li>
+<p>Adverse drug effects such as</p>
+<ul>
+<li>Refractory constipation</li>
+<li>Nightmares</li>
+<li>Myoclonus</li>
+</ul>
+</li>
+<li>Potential benefit of one opioid over another e.g. methadone in difficult to control pain</li>
+<li>Difficulty of administration e.g. fentanyl patch may be used where patient cannot swallow or is vomiting</li>
+</ul>
+<p>(Therapeutic Guidelines: Palliative Care)</p>
+<p><a href="#content-hub"><img src="images/backarrow.png" alt="back"></a></p>
+<h1>Opioids in special populations</h1>
+<p><a href="#home"><img src="images/homebtn.png" alt="home"></a></p>
+<p>Renal Impairment: impaired renal function avoid morphine (can be used at lower doses, less frequently), caution with oxycodone or hydromorphone. Recommended opioids are fentanyl, buprenorphine or methadone</p>
+<p>Hepatic Impairment: caution with oxycodone</p>
+<p>Elderly: morphine tends to be poorly tolerated in the elderly (probably as a reflection of impaired renal function). Buprenorphine patches(Norspan©) give a continuous infusion of low-dose opioid</p>
+<p>Possible effects/characteristics:</p>
+<ul>
+<li>Confusion</li>
+<li>Increased plasma free drug concentration related to reduced metabolism and distribution volume in the elderly</li>
+<li>Reduced clearance of opioids related to reduced hepatic blood flow (up to 40-50% by age 75).</li>
+</ul>
+<p>Children: Contact the paediatric palliative care team at Royal Children’s Hospital <a href="tel:+61736461357">07 3646 1357</a></p>
+<p>Opioid Dependence: Patients with a history of abuse of opioid analgesics should not be denied opioid analgesics for management of pain. Their care may need to involve a health professional with expertise in addiction therapy.</p>
+<p>Such patients may require higher than usual opioid doses to control pain (Therapeutic Guidelines: Palliative Care).</p>
+<p>See Therapeutic Guidelines: Palliative Care, ‘Managing Pain in Patients with Substance Use Disorders’, pp 226-7.</p>
+<p>Terminally Ill: Although patients may be unable to respond when close to death, there is no evidence to suggest sensation is reduced at this time. There should be no reduction in analgesia unless a judgment is made by a palliative care clinician that the patient is over-sedated or narcotised.</p>
+<p><a href="#content-hub"><img src="images/backarrow.png" alt="back"></a></p>
+<h1>Opioids to avoid</h1>
+<p><a href="#home"><img src="images/homebtn.png" alt="home"></a></p>
+<p>Dextropropoxyphene, available in combination formulations usually with paracetamol (e.g. Digesic), no more effective than codeine, significant toxicity</p>
+<p>Pethidine, no advantage over other opioids, cumulative toxicity, toxic metabolites, no oral formulation, dependency issues, no advantage in colic pain</p>
+<p><a href="#content-hub"><img src="images/backarrow.png" alt="back"></a></p>
+<h1>Morphine myths and facts</h1>
+<p><a href="#home"><img src="images/homebtn.png" alt="home"></a></p>
+<p>Fact: Morphine should be titrated according to efficacy and toxicity.</p>
+<p>Myth: Morphine or other opioids hasten death.<br>
+Fact: Morphine does not hasten death if used correctly, and in fact appropriate analgesia can increase life expectancy (Temel et al., 2010).</p>
+<p>Myth: Morphine is only used when death is imminent.<br>
+Fact: Morphine should be used when a person’s pain is severe enough to warrant it; use does not imply that death is imminent</p>
+<p>Myth: There is a limit to the dose of morphine that can be used.<br>
+Fact: Morphine has no upper limit dose, though in practice if increasingly higher doses are required, consideration should be given to opioid switching.</p>
+<p>Myth: Use of morphine will interfere with what other treatment options may be used.<br>
+Fact: Morphine use will not limit other treatment options.</p>
+<p>Myth: Morphine has intolerable side effects.<br>
+Fact: Morphine rarely has intolerable side effects if titrated correctly.</p>
+<p>Myth: A person taking morphine should not be driving a car.<br>
+Fact: Taking morphine does not exclude a person from driving if the dose is stable.</p>
+<p><a href="#content-hub"><img src="images/backarrow.png" alt="back"></a></p>
+<h1>Breakthrough Pain</h1>
+<p><a href="#home"><img src="images/homebtn.png" alt="home"></a></p>
+<p>Breakthrough pain occurs between regular doses of analgesia; it reflects an increase in pain level beyond the control of the baseline analgesic.</p>
+<p>In this situation the patient should be given an additional, or breakthrough, dose of their regular opioid.</p>
+<p>The breakthrough (BT) dose ordered should be one-twelfth to one-sixth of the total daily dose (50% to 100% of the regular 4-hourly dose). The patient should be instructed to take the BT dose as often as necessary to control the pain. BT doses should be given no more frequently than every 30 minutes.</p>
+<p>The regular analgesic dose should be reviewed if BT pain is not controlled after 3 doses.</p>
+<p>The regular dose of opioid should be taken at the scheduled time.</p>
+<p>(Therapeutic Guidelines: Palliative Care)</p>
+<p><a href="#content-hub"><img src="images/backarrow.png" alt="back"></a></p>
+<h1>Incident Pain</h1>
+<p><a href="#home"><img src="images/homebtn.png" alt="home"></a></p>
+<p>Incident pain is exacerbated by, or occurs with, activity, such as getting out of bed. It is common in patients with metastatic bone disease.</p>
+<p>Consideration should be given to palliative radiotherapy, and where relevant, orthopaedic surgery to pre-empt or stabilise a fracture.</p>
+<p>Options for management of incident pain</p>
+<ul>
+<li>Adequate doses of an NSAID</li>
+<li>Modification of frequency/type of dressing if the cause of incident pain</li>
+<li>Short acting opioid such as fentanyl</li>
+<li>Other short acting agents e.g. nitrous oxide</li>
+<li>Seek input of a physiotherapist or occupational therapist to help minimise pain</li>
+</ul>
+<p>(Therapeutic Guidelines: Palliative Care)</p>
+<p><a href="#content-hub"><img src="images/backarrow.png" alt="back"></a></p>
+<h1>Some types of pain</h1>
+<p><a href="#home"><img src="images/homebtn.png" alt="home"></a></p>
+<p>Nociceptive superficial somatic pain</p>
+<p>If the patient describes their pain as:</p>
+<ul>
+<li>sharp</li>
+<li>stinging</li>
+<li>hot</li>
+</ul>
+<p>think nociceptive superficial somatic pain e.g. from malignant ulcers or stomatitis use <a href="#firstline">opioids</a></p>
+<p>Nociceptive deep somatic pain</p>
+<p>Described as dull, throbbing, aching</p>
+<p>May relate to:</p>
+<ul>
+<li>liver capsule distension – use corticosteroids</li>
+<li><a href="#contenthub-difficultcontrol">bone metastases</a></li>
+</ul>
+<p>Visceral nociceptive pain</p>
+<p>Does the patient describe their pain as:</p>
+<ul>
+<li>cramping or colicky</li>
+<li>dull, referred pain</li>
+</ul>
+<p>Symptoms indicate visceral nociceptive pain. Use:</p>
+<ul>
+<li>
+<p>opioids, plus</p>
+<ul>
+<li>antispasmodics if colicky pain</li>
+<li>paracetamol, corticosteroids if constant pain</li>
+</ul>
+</li>
+</ul>
+<p>Skeletal muscle spasm pain</p>
+<p>Use:</p>
+<ul>
+<li>diazepam 2-5 mg orally up to three times daily</li>
+<li>baclofen 5 mg orally, 3 times daily, increasing every 3 days to 10-25 mg orally, 3 times daily</li>
+</ul>
+<p>Smooth muscle spasm pain</p>
+<p>Hyoscine hydrobromide or hyoscine butylbromide may be used with opioids for cramping pain related to bowel obstruction. Use:</p>
+<p>hyoscine hydrobromide</p>
+<ul>
+<li>0.4 mg SC, 4-hourly or</li>
+<li>up to 1.6 mg/24 hours via continuous subcutaneous infusion (CSCI)</li>
+</ul>
+<p>OR</p>
+<p>hyoscine butylbromide</p>
+<ul>
+<li>10-20 mg SC, 4 hourly or</li>
+<li>60-80 mg/24 hours initially by CSCI; titrate to effect to maximum of 120 mg/24 hours</li>
+</ul>
+<p><a href="#home"><img src="images/backarrow.png" alt="back"></a></p>
+<h1>Breakthrough Pain</h1>
+<p><a href="#home"><img src="images/homebtn.png" alt="home"></a></p>
+<p>Breakthrough pain occurs between regular doses of analgesia; it reflects an increase in pain level beyond the control of the baseline analgesic.</p>
+<p>In this situation the patient should be given an additional, or breakthrough, dose of their regular opioid.</p>
+<p>The breakthrough (BT) dose ordered should be one-twelfth to one-sixth of the total daily dose (50% to 100% of the regular 4-hourly dose). The patient should be instructed to take the BT dose as often as necessary to control the pain. BT doses should be given no more frequently than every 30 minutes.</p>
+<p>The regular analgesic dose should be reviewed if BT pain is not controlled after 3 doses.</p>
+<p>The regular dose of opioid should be taken at the scheduled time.</p>
+<p>(Therapeutic Guidelines: Palliative Care)</p>
+<p><a href="#home"><img src="images/backarrow.png" alt="back"></a></p>
+<h1>Resources</h1>
+<p><a href="#home"><img src="images/homebtn.png" alt="home"></a></p>
+<p>This section includes external links and useful contacts</p>
+<p><a href="http://www.caresearch.com.au/caresearch/tabid/901/Default.aspx">CareSearch: GP Hub</a>.</p>
+<p><a href="http://www.iasp-pain.org/Content/NavigationMenu/GeneralResourceLinks/FacesPainScaleRevised/default.htm">CareSearch: IASP Faces Pain Scale.</a></p>
+<p><a href="http://www.britishpainsociety.org/pub_pain_scales.htm">CareSearch: IASP Faces Pain Scale.</a> CareSearch: Pain scales in multiple languages (British Pain Society).</p>
+<p><a href="http://www.caresearch.com.au/caresearch/ProfessionalGroups/GPHome/GPResources/PrintablePatientResources/tabid/1280/Default.aspx">CareSearch: Printable Patient Resources</a>.</p>
+<p>EPERC: End of Life/Palliative Education Resource Center (No date). Fast Facts: Opioid use in renal failure. <a href="http://www.eperc.mcw.edu/EPERC/FastFactsIndex/ff_161.htm">http://www.eperc.mcw.edu/EPERC/<br>
+FastFactsIndex/ff_161.htm</a></p>
+<p>Hanks G, Cherny N, Christakis N, Fallon M, Kaasa S, Portenoy R (2010). Oxford textbook of palliative medicine. Fourth edition. Oxford: Oxford University Press.</p>
+<p>Palliative Care Expert Group. Therapeutic guidelines: palliative care. Version 3. Melbourne: Therapeutic Guidelines Limited, 2010. (Available from <a href="http://www.tg.org.au/">www.tg.org.au/</a>).</p>
+<p>Temel J et al. (2010). Early palliative care for patients with metastatic non-small-cell lung cancer. N Engl J Med 363:733-42</p>
+<p>Twycross R, Wilcock A, Toller CS (2009). Symptom management in advanced cancer. Fourth edition. Nottingham: Palliativedrugs.com Ltd. <a href="http://www.palliativedrugs.com/index.html">www.palliativedrugs.com</a></p>
+<p>Woodruff R (2004). Palliative medicine: evidence-based symptomatic and supportive care for patients with advanced cancer. South Melbourne, Vic.: Oxford University Press.</p>
+<p><a href="http://www.palliativedrugs.com/index.html">palliativedrugs.com</a>. Independent information for health professionals about drugs used in palliative care.</p>
+<p><a href="#home"><img src="images/backarrow.png" alt="back"></a></p>
+<h1>Trouble Shooting</h1>
+<p><a href="#home"><img src="images/homebtn.png" alt="home"></a></p>
+<p>My patient’s pain/other symptoms are very difficult to control; what do I do next?</p>
+<ol>
+<li>Review <a href="#mod-severe">Moderate to Severe Pain section</a> section</li>
+<li>Contact your local specialist palliative care team</li>
+</ol>
+<p><img src="images/phone-grey.png"></p>
+<p>Gold Coast<br>
+<a href="tel:0756356400">07 5635 6400</a></p>
+<p><a href="tel:0756686021">07 5668 6021</a></p>
+<hr>
+<p><img src="images/phone-grey.png"></p>
+<p>Royal Brisbane and Women’s Hospital<br>
+<a href="tel:0736466138">07 3646 6138</a></p>
+<hr>
+<p><img src="images/phone-grey.png"></p>
+<p>Brisbane South<br>
+<a href="tel:0731826419">07 3182 6419</a></p>
+<hr>
+<p><img src="images/phone-grey.png"></p>
+<p>Mater Hospital (Brisbane)<br>
+GPs: <a href="tel:0731638111">07 3163 8111</a></p>
+<hr>
+<p><img src="images/phone-grey.png"></p>
+<p>St Vincent’s Hospital Brisbane<br>
+GPs: <a href="tel:0732401111">07 3240 1111</a></p>
+<p>Patients/carers: <a href="tel:0732401177">07 3240 1177</a></p>
+<hr>
+<p><img src="images/phone-grey.png"></p>
+<p>The Prince Charles Hospital<br>
+(BH): <a href="tel:0731394601">07 3139 4601</a></p>
+<p>(AH): <a href="tel:0731394000">07 3139 4000</a></p>
+<p>Patients/carers: contact GP</p>
+<hr>
+<p><img src="images/phone-grey.png"></p>
+<p>Redcliffe Hospital<br>
+GPs: <a href="tel:0738837364">07 3883 7364</a></p>
+<hr>
+<p><img src="images/phone-grey.png"></p>
+<p>Sunshine Coast<br>
+GPs (BH): <a href="tel:0754705333">07 5470 5333</a></p>
+<p>GPs (AH): <a href="tel:0754706600">07 5470 6600</a></p>
+<p>Patient/carer (known or unknown BH): <a href="tel:0754705333">07 5470 5333</a></p>
+<p>Patient/carer known to service AH:<br>
+<a href="tel:0754368631">07 5436 8631</a></p>
+<hr>
+<p><img src="images/phone-grey.png"></p>
+<p>Townsville<br>
+GPs (BH): <a href="tel:0744331111">07 4433 1111</a><br>
+ask for pallative care registrar  </p>
+<p>GPs (AH): <a href="tel:0744331111">07 4433 1111</a><br>
+ask for palliative care consultant on call  </p>
+<p>Patients/carers: (BH):<br>
+<a href="tel:0744334260">07 4433 4260</a>  </p>
+<p>Patients/carers: (AH): their GP or Blue Care nurse</p>
+<hr>
+<p><img src="images/phone-grey.png"></p>
+<p>Palliative Care Helpline<br>
+<a href="tel:1800772273">1800 772 273</a><br>
+(9am-5pm Monday-Friday)</p>
+<p><a href="#home"><img src="images/backarrow.png" alt="back"></a></p>
+<h1>Dose Conversion</h1>
+<p><a href="#home"><img src="images/homebtn.png" alt="home"></a></p>
+<p>Converting from various opioids to an equianalgesic dose of oral morphine</p>
+<p>Enter the previous opioid dose:</p>
+<p> Buprenorphine patch mcg/hr - Topical Codeine mg - Oral Fentanyl mcg - Subcutaneous Fentanyl mg - Buccal Fentanyl patch mcg/hr - Topical Hydromorphone CR mg - Oral Hydromorphone IR mg - Oral Hydromorphone IR mg - Subcutaneous Morphine mg - Oral Morphine mg - Subcutaneous Oxycodone CR mg - Oral Oxycodone IR mg - Oral Tramadol mg - Oral   </p>
+<p>The equivalent oral Morphine dose (mg/24 hr) is:</p>
+<hr>
+<p>Converting from oral morphine to equianalgesic doses of various opioids.</p>
+<p>Enter the dose amount of oral morphine (mg/24 hr):</p>
+<p>Please select conversion type</p>
+<p>Buprenorphine patch mcg/hr - Topical Codeine mg - Oral Fentanyl mcg - Subcutaneous Fentanyl mg - Buccal Fentanyl patch mcg/hr - Topical Hydromorphone CR mg - Oral Hydromorphone IR mg - Oral Hydromorphone IR mg - Subcutaneous Morphone mg - Oral Morphone mg - Subcutaneous Oxycodone CR mg - Oral Oxycodone IR mg - Oral Tramadol mg - Oral </p>
+<p>The dose conversion is:</p>
+<p><a href="#home"><img src="images/backarrow.png" alt="back"></a></p>
+<h1>Patient FAQs</h1>
+<p><a href="#home"><img src="images/homebtn.png" alt="home"></a></p>
+<p>[</p>
+<p>Q1: If I start taking morphine now, doesn’t that mean there’ll be nothing to control my pain at the end?</p>
+<p>](#faq)</p>
+<p>A: No, it’s important to get your pain controlled so your quality of life is improved. The morphine dose can be increased if necessary, and there are many other similar drugs that can be tried if morphine no longer controls your pain adequately.</p>
+<p>[</p>
+<p>Q2: I’ve had morphine before and it made me sick; doesn’t that mean I’m allergic to it?</p>
+<p>](#faq)</p>
+<p>A: No, it’s common for people to experience nausea and vomiting when first taking drugs such as morphine. You can be given a small dose of a medication to help control that (e.g. metoclopramide 10mg oral tds) and it should settle within a week.</p>
+<p>[</p>
+<p>Q3: I don’t want to take morphine in case I get addicted to it.</p>
+<p>](#faq)</p>
+<p>A: Research has confirmed what most doctors and nurses know already – that use of strong medications such as morphine for pain control does not lead to addiction (psychological dependence).</p>
+<p>Formulations see PBS A-Z Medicine Listing (<a href="http://www.pbs.gov.au/browse/medicine-listing">www.pbs.gov.au/browse/medicine-listing</a>)*</p>
+<p>[</p>
+<p>Q4: My pain isn’t properly controlled by my medication; should I try another one?</p>
+<p>](#faq)</p>
+<p>A: You should speak with your GP or specialist palliative care team member. You may have ><a href="#contenthub-incident">incident pain</a> or <a href="#breakthrough">breakthrough pain</a>, which should be able to be controlled.</p>
+<p><a href="#home"><img src="images/backarrow.png" alt="back"></a></p>
+<h1>Glossary/Index</h1>
+<p><a href="#home"><img src="images/homebtn.png" alt="home"></a></p>
+<p>Glossary</p>
+<p>Allodynia is pain in response to a stimulus that would not normally cause pain e.g. light brushing of the skin.</p>
+<p>Breakthrough pain Breakthrough pain occurs between regular doses of analgesia; it reflects an increase in pain level beyond the control of the baseline analgesic. <a href="#breakthrough">Suggestions</a> for managing breakthrough pain.</p>
+<p>Incident pain is exacerbated by, or occurs with, activity, such as getting out of bed. It is common in patients with metastatic bone disease. See <a href="#contenthub-incident">suggestions</a> for managing incident pain.</p>
+<p>Neuropathic pain arises from nerves directly invaded by cancer, or damaged e.g. by diabetic neuropathy or chemotherapy. A patient with neuropathic pain may describe it as like pins and needles, tingling, burning, or shooting. Neuropathic pain may also manifest as pain in a missing body part, or in a numb area.</p>
+<p>Nociceptive pain is associated with tissue distortion or injury (twycross, wilcock and toller, 2009).</p>
+<p>Tolerance is a normal physiological response to chronic opioid therapy where increasing doses are required to produce the same effect (Woodruff, 2004).</p>
+<p>Index</p>
+<p><a href="#firstline">Antiepileptic drugs</a></p>
+<p><a href="#firstline">Antidepressant drugs</a></p>
+<p><a href="#contenthub-difficultcontrol">Bone metastases</a></p>
+<p><a href="#contenthub-difficultcontrol">Co-analgesics</a></p>
+<p><a href="#dose">Dose conversion tables</a></p>
+<p><a href="#sometypes">Nociceptive somatic pain</a></p>
+<p><a href="#contenthub-difficultcontrol">Nonpharmacological pain management</a></p>
+<p><a href="#contenthub-difficultcontrol">Opioid switch</a></p>
+<p><a href="#faq">Patient FAQs</a></p>
+<p><a href="#mild-mod">Toxicity, cardiovascular</a></p>
+<p><a href="#mild-mod">Toxicity, gastrointestinal</a></p>
+<p><a href="#mild-mod">Toxicity, renal</a></p>
+<p><a href="#troubleshooting">Troubleshooting</a></p>
+<p><a href="#sometypes">Visceral nociceptive pain</a></p></div><hr style="margin-bottom:1.75rem"/><div style="display:flex;margin-bottom:4.375rem"><img src="" alt="test subline" style="margin-right:0.875rem;margin-bottom:0;width:3.5rem;height:3.5rem"/><div><strong>SVictory</strong> for ACRRM</div></div><ul style="display:flex;flex-wrap:wrap;justify-content:space-between;list-style:none;padding:0"><li><a rel="prev" href="/main_menu/">← </a></li><li><a rel="next" href="/"> →</a></li></ul></div><footer id="FOOTER_1"><div id="DIV_2"><div id="DIV_3"><div id="DIV_4"><img src="/images/default-source/logos/acrrm-logo.svg?sfvrsn=a992cb7e_2" alt="ACRRM - Australian College of Rural &amp; Remote Medicine" id="IMG_5"/><div id="DIV_6"><p id="P_7">ACRRM acknowledges Australian Aboriginal People and Torres Strait Islander People as the first inhabitants of the nation. We respect the traditional owners of lands across Australia in which our members and staff work and live, and pay respect to their elders past present and future.<br id="BR_8"/><br id="BR_9"/>© 2018 Australian College of Rural and Remote Medicine - ABN: 12 078 081 848<small id="SMALL_10"></small></p></div></div><div id="DIV_11"><div id="DIV_12"><div id="DIV_13"><div id="DIV_14"><div id="DIV_15"><div id="DIV_16"><h4 id="H4_17">Creating better health for rural and remote people through access to skilled rural doctors.</h4></div></div><div id="DIV_18"><div id="DIV_19"><ul id="UL_20"><li id="LI_21"><a href="#" id="A_22">My College</a></li><li id="LI_23"><a href="#" id="A_24">Join ACRRM</a></li><li id="LI_25"><a href="#" id="A_26">Pathways</a></li></ul></div><div id="DIV_27"><div id="DIV_28"><div id="DIV_29"><p id="P_30"><span id="SPAN_31">Head office:</span><br id="BR_32"/>123 Fake street,<br id="BR_33"/>Springfield,<br id="BR_34"/>Ohio</p></div></div><div id="DIV_35"><div id="DIV_36"><p id="P_37"><span id="SPAN_38">Head office:</span><br id="BR_39"/>GPO Box 2507<br id="BR_40"/>BRISBANE QLD 4001</p></div></div></div></div></div><div id="DIV_41"><div id="DIV_42"><div id="DIV_43"><div id="DIV_44"><ul id="UL_45"><li id="LI_46"><a href="#" id="A_47">My College</a></li><li id="LI_48"><a href="#" id="A_49">Join ACRRM</a></li><li id="LI_50"><a href="#" id="A_51">Pathways</a></li></ul></div></div></div><div id="DIV_52"><div id="DIV_53"><div id="DIV_54"><div id="DIV_55"><a href="tel:1800223226" id="A_56"><span id="SPAN_57"><em id="EM_58"></em></span> <span id="SPAN_59">1800 223 226</span></a></div></div><div id="DIV_60"><div id="DIV_61"><ul id="UL_62"><li id="LI_63"><a href="www.linkedin.com" id="A_64"> <span id="SPAN_65"><i id="I_66"></i></span></a></li><li id="LI_67"><a href="www.twitter.com" id="A_68"> <span id="SPAN_69"><i id="I_70"></i></span></a></li><li id="LI_71"><a href="www.facebook.com" id="A_72"> <span id="SPAN_73"><i id="I_74"></i></span></a></li></ul></div></div></div></div></div></div></div></div></div><div id="DIV_75"></div></div></footer></div></div><script>
+  
+  
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', 'undefined', 'auto', {});
+      
+      
+      
+      }
+      </script><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/app/";window.webpackCompilationHash="51d8f384bf036aeb3a93";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-12eb7abadf2cd370a124.js"],"component---node-modules-gatsby-plugin-offline-app-shell-js":["/component---node-modules-gatsby-plugin-offline-app-shell-js-4ef21d353425ab53bb3a.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-6fa71394ab0e21d15089.js"],"component---src-pages-index-js":["/component---src-pages-index-js-a7e6e2d2c4e7635ba030.js"],"component---src-pages-404-js":["/component---src-pages-404-js-f4fc98f53f4cb49d169e.js"]};/*]]>*/</script><script src="/webpack-runtime-b4c871f42a29bcd84626.js" async=""></script><script src="/styles-3575ff81eeb381c6886b.js" async=""></script><script src="/1-54e35b81647a395f3b32.js" async=""></script><script src="/2-be4208690712712db845.js" async=""></script><script src="/app-12eb7abadf2cd370a124.js" async=""></script><script src="/component---src-templates-blog-post-js-6fa71394ab0e21d15089.js" async=""></script></body></html>
