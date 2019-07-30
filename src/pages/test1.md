@@ -1,0 +1,37 @@
+ Page1         
+
+[![back](images/backarrow.png)](#home)
+
+[Test 1](test2.html)
+====================
+
+[![home](images/homebtn.png)](#home)
+
+[
+
+Q1: If I start taking morphine now, doesn't that mean there'll be nothing to control my pain at the end?
+
+](#faq)
+
+A: No, it's important to get your pain controlled so your quality of life is improved. The morphine dose can be increased if necessary, and there are many other similar drugs that can be tried if morphine no longer controls your pain adequately.
+
+Converting from various opioids to an equianalgesic dose of oral morphine
+
+Enter the previous opioid dose:
+
+ Buprenorphine patch mcg/hr - Topical Codeine mg - Oral Fentanyl mcg - Subcutaneous Fentanyl mg - Buccal Fentanyl patch mcg/hr - Topical Hydromorphone CR mg - Oral Hydromorphone IR mg - Oral Hydromorphone IR mg - Subcutaneous Morphine mg - Oral Morphine mg - Subcutaneous Oxycodone CR mg - Oral Oxycodone IR mg - Oral Tramadol mg - Oral   
+  
+
+The equivalent oral Morphine dose (mg/24 hr) is:
+
+* * *
+
+Converting from oral morphine to equianalgesic doses of various opioids.
+
+Enter the dose amount of oral morphine (mg/24 hr):
+
+Please select conversion type
+
+Buprenorphine patch mcg/hr - Topical Codeine mg - Oral Fentanyl mcg - Subcutaneous Fentanyl mg - Buccal Fentanyl patch mcg/hr - Topical Hydromorphone CR mg - Oral Hydromorphone IR mg - Oral Hydromorphone IR mg - Subcutaneous Morphone mg - Oral Morphone mg - Subcutaneous Oxycodone CR mg - Oral Oxycodone IR mg - Oral Tramadol mg - Oral 
+
+The dose conversion is:
