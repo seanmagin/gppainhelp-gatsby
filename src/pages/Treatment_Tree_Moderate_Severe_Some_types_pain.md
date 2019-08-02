@@ -1,4 +1,9 @@
- Some types of pain         
+---
+title: Some types of pain 
+date: 2015-05-01T22:12:03.284+00:00
+
+---  
+        
 
 [![back](images/backarrow.png)](Treatment_Tree_Moderate_Severe_Menu.html)
 

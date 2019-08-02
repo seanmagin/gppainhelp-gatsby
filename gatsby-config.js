@@ -26,7 +26,7 @@ module.exports = {
         name: 'data',
       },
     },
-    `gatsby-plugin-sass`,
+    `gatsby-plugin-postcss`,
     {
       resolve: `gatsby-transformer-remark`,
       options: {
