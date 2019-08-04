@@ -4,6 +4,9 @@
   "version": "1.0.0",
   "author": "Simon Victory <email@simonvictory.com>",
   "dependencies": {
+    "@material-ui/core": "^4.3.1",
+    "@material-ui/icons": "^4.2.1",
+    "clsx": "^1.0.4",
     "gatsby": "^2.0.19",
     "gatsby-plugin-feed": "^2.0.8",
     "gatsby-plugin-google-analytics": "^2.0.5",
